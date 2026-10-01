@@ -11,7 +11,7 @@ A wholesale gadget commerce application with a React 18/Vite/TypeScript storefro
 
 `https://arifgadget.store/` returned HTTP 200 during the audit. The page title was **Wholesale Gadgets, Factory Direct — Arif Gadgets**. A Playwright full-page screenshot is included below. This confirms the storefront homepage was reachable at capture time; it does not confirm API, checkout, admin, payment, or deployment health.
 
-![Arif Gadget Store homepage captured with Playwright](../assets/screenshots/arifgadget-home.png)
+![Arif Gadget Store homepage captured with Playwright](../../assets/screenshots/arifgadget-home.png)
 
 The screenshot visibly shows search, category navigation, hero promotion, product grids, discounts, cart/account links, order tracking, chat/WhatsApp contact, delivery promises, and footer policy/contact areas.
 

@@ -1,34 +1,39 @@
 # Developer Docs
 
-This is the reusable setup and deployment guide for Bayzed123 web projects. Each project page is based on a static audit of the repository's source, package manifests, environment documentation, and CI/CD workflows.
+This is the reusable setup, feature, pipeline, deployment, and whitelabel rebranding documentation for Bayzed123 web projects.
 
-> **Evidence rule:** a feature listed in source or README documentation is labeled as documented/source-verified. A live URL, deployment, test run, payment integration, or browser behavior is only labeled verified when it was actually checked.
+> **Folder rule:** every project has its own directory. Do not create a single all-in-one project Markdown file. Use the separate Overview, Setup, Features, Environment, Pipeline, Deployment, Whitelabel Rebranding, and Troubleshooting pages for each client rebuild.
 
 ## Project guides
 
-| Project | Architecture | Evidence status |
-|---|---|---|
-| [Harbal Pakriti](projects/harbal-pakriti.md) | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
-| [Jewellery and Fashion](projects/jewellery-and-fashion.md) | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
-| [Babyshop](projects/babyshop.md) | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
-| [Arif Gadget Store](projects/arifgadget-store.md) | React/Vite Pages + Cloudflare Worker API | **Live storefront reachable and screenshot captured** |
-| [LKS Attire](projects/lks-attire.md) | Cloudflare Worker + static storefront/admin | Repository audited; backup failures need attention |
+| Project | Guide folder | Architecture | Evidence |
+|---|---|---|---|
+| [Harbal Pakriti](projects/harbal-pakriti/index.md) | `projects/harbal-pakriti/` | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
+| [Jewellery and Fashion](projects/jewellery-and-fashion/index.md) | `projects/jewellery-and-fashion/` | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
+| [Babyshop](projects/babyshop/index.md) | `projects/babyshop/` | Cloudflare Worker + Hono + D1/KV/R2 | Repository audited; live deployment not confirmed |
+| [Arif Gadget Store](projects/arifgadget-store/index.md) | `projects/arifgadget-store/` | React/Vite Pages + Cloudflare Worker API | Live storefront reachable and screenshot captured |
+| [LKS Attire](projects/lks-attire/index.md) | `projects/lks-attire/` | Cloudflare Worker + static storefront/admin | Repository audited; backup failures need attention |
 
-## Rebuild any project from this guide
+## Standard project folder
 
-1. Open the project guide and confirm the repository URL and audited commit.
-2. Install the runtime version and dependencies using the repository lockfile.
-3. Copy the documented environment template and configure local-only values.
-4. Run the build, migrations, seed, admin bootstrap, and local server commands in order.
-5. Run type checks, unit tests, and end-to-end tests before deployment.
-6. Configure provider secrets and bindings in the hosting platform.
-7. Deploy through the tested CI/CD pipeline, then run health and smoke checks.
-8. Replace placeholders, verify customer-facing content, and record the deployed commit.
+Every project folder follows this structure:
 
-## Common architecture pattern
+```text
+projects/<project-name>/
+├── index.md              # project identity, stack, audited commit, evidence
+├── setup.md              # clean local setup and first run
+├── features.md           # source-verified product and admin features
+├── environment.md        # secrets, bindings, integrations, and brand settings
+├── pipeline.md           # CI, tests, migrations, release gates
+├── deployment.md         # production provisioning and launch sequence
+├── whitelabel.md         # reusable client rebranding and content replacement
+└── troubleshooting.md    # project-specific recovery and diagnostic steps
+```
 
-Four projects are Cloudflare Worker storefronts with Hono APIs, D1 databases, KV, optional R2 media, and scheduled jobs. They share similar Bangladesh e-commerce integrations such as COD, manual mobile-wallet payments, courier tracking, SMS, email, WhatsApp, analytics, and Turnstile. Arif Gadget Store is the exception: its frontend is a React/Vite GitHub Pages SPA and its API runs separately on Cloudflare Workers.
+## Rebuild any client project
 
-## Live evidence
+Read `index.md` first, then follow **Setup → Environment → Features → Pipeline → Deployment → Whitelabel Rebranding → Troubleshooting**. Confirm the audited commit, use the repository lockfile, test on a fresh database, keep client secrets isolated, replace placeholder content, and record the deployed commit.
 
-The only live domain confirmed during this audit was `https://arifgadget.store/`. Its home page was captured with Playwright and included in the Arif Gadget guide. The repository metadata for the remaining projects did not provide a confirmed homepage, so no live screenshots are claimed for them.
+## Evidence policy
+
+Source features and commands are based on repository audits. Live behavior is only claimed when tested. `https://arifgadget.store/` was reachable during the audit and has a Playwright screenshot in its folder. The other projects had no confirmed homepage in GitHub metadata, so no unverified live screenshots are claimed.

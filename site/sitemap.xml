@@ -31,31 +31,241 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store.html</loc>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/deployment.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop.html</loc>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/environment.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti.html</loc>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/features.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion.html</loc>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/index.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire.html</loc>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/pipeline.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/setup.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/troubleshooting.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store/whitelabel.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/deployment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/environment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/features.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/index.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/pipeline.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/setup.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/troubleshooting.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop/whitelabel.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/deployment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/environment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/features.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/index.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/pipeline.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/setup.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/troubleshooting.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/harbal-pakriti/whitelabel.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/deployment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/environment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/features.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/index.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/pipeline.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/setup.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/troubleshooting.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/jewellery-and-fashion/whitelabel.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/deployment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/environment.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/features.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/index.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/pipeline.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/setup.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/troubleshooting.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire/whitelabel.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
