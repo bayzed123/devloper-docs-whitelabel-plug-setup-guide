@@ -42,6 +42,9 @@ jobs:
             cp docs/projects/$project/live-proof/*.png "site/projects/$project/live-proof/"
           done
 
+      - name: Remove theme-change controls
+        run: python scripts/remove-theme-controls.py site
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

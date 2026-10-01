@@ -7,13 +7,13 @@ repo_url: https://github.com/bayzed123/devloper-docs-whitelabel-plug-setup-guide
 language: en
 
 theme:
-  name: book
+  name: apiplay
   palette:
     primary: "#4A3AE3"
     accent: "#C2660D"
 
 style_switcher:
-  enabled: true
+  enabled: false
   variants:
     - book
     - default

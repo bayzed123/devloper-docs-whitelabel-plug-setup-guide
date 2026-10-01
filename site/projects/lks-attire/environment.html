@@ -32,143 +32,62 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <title>LKS Attire — Environment - Developer Docs</title>
-    <link rel="stylesheet" href="../../static/book/css/book.css">
-    <noscript><style>.book-content > * { opacity: 1 !important; transform: none !important; }</style></noscript>
+    <link rel="stylesheet" href="../../static/apiplay/css/apiplay.css">
+    <noscript><style>.api-content > * { opacity: 1 !important; transform: none !important; }</style></noscript>
     
     <style>
         :root, :root[data-theme] {
-            --book-primary: #4A3AE3;
-            --book-accent: #C2660D;
+            --api-primary: #4A3AE3;
+            --api-accent: #C2660D;
         }
     </style>
     
 </head>
-<body class="book-body">
-    <!-- AMBIENT BACKGROUND MOTION
-         Fixed, decorative, pointer-events:none layer sitting behind
-         everything: two slow-drifting light washes plus a handful of
-         open-book glyphs that rise and turn like pages settling. Pure
-         CSS transform/opacity keyframes -- no images, no third-party
-         particle library. Disabled entirely under prefers-reduced-motion
-         (see book.css). -->
-    <div class="book-ambient" aria-hidden="true">
-        <span class="book-ambient-glow book-ambient-glow-a"></span>
-        <span class="book-ambient-glow book-ambient-glow-b"></span>
-        <span class="book-ambient-page book-ambient-page-1">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/></svg>
-        </span>
-        <span class="book-ambient-page book-ambient-page-2">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/></svg>
-        </span>
-        <span class="book-ambient-page book-ambient-page-3">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/></svg>
-        </span>
-        <span class="book-ambient-mote book-ambient-mote-1"></span>
-        <span class="book-ambient-mote book-ambient-mote-2"></span>
-        <span class="book-ambient-mote book-ambient-mote-3"></span>
-        <span class="book-ambient-mote book-ambient-mote-4"></span>
-    </div>
+<body class="api-body-root">
+    <div class="api-progress-rail"><div class="api-progress-fill" id="api-progress-fill"></div></div>
 
-    <!-- SCROLL READING PROGRESS -->
-    <div class="book-progress-rail"><div class="book-progress-fill" id="book-progress-fill"></div></div>
-
-    <!-- RUNNING HEAD -->
-    <header class="book-header" id="book-header">
-        <div class="book-container">
-            <button class="book-menu-toggle" id="menu-toggle" type="button" aria-label="Toggle contents">
+    <!-- HEADER: terminal-window chrome bar -->
+    <header class="api-header" id="api-header">
+        <div class="api-chrome">
+            <span class="api-dot api-dot-r" aria-hidden="true"></span>
+            <span class="api-dot api-dot-y" aria-hidden="true"></span>
+            <span class="api-dot api-dot-g" aria-hidden="true"></span>
+            <span class="api-chrome-path">developer-docs — projects/lks-attire/environment.html</span>
+        </div>
+        <div class="api-container">
+            <button class="api-menu-toggle" id="menu-toggle" type="button" aria-label="Toggle file tree">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
             </button>
-            <a class="book-brand" href="../../index.html">
-                <span class="book-brand-mark" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/><path d="M12 6v13"/></svg>
-                </span>
-                <span class="book-brand-name">Developer Docs</span>
+            <a class="api-brand" href="../../index.html">
+                <span class="api-brand-mark" aria-hidden="true">&gt;_</span>
+                <span class="api-brand-name">Developer Docs</span>
             </a>
-            <span class="book-running-title">LKS Attire — Environment</span>
 
-            <div class="book-search">
+            <div class="api-search">
                 <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
-                <input type="text" id="search-input" placeholder="Search…">
-                <div class="book-search-results" id="search-results"></div>
+                <input type="text" id="search-input" placeholder="grep docs…">
+                <div class="api-search-results" id="search-results"></div>
             </div>
 
-            <div class="book-header-right">
-                <button class="book-icon-btn" id="focus-toggle" type="button" aria-pressed="false" aria-label="Toggle focused reading mode" title="Focused reading mode">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"/></svg>
-                </button>
-                <a href="https://github.com/bayeziddev/smartGenDocs" target="_blank" rel="noopener" class="book-icon-btn" aria-label="View source on GitHub">
+            <div class="api-header-right">
+                <a href="https://github.com/bayeziddev/smartGenDocs" target="_blank" rel="noopener" class="api-icon-btn" aria-label="View source on GitHub">
                     <svg class="icon filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 </a>
-                
-<div class="theme-switcher" id="theme-switcher">
-    <button class="icon-btn" id="theme-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu" aria-label="Choose theme">
-        <svg class="icon icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
-        <svg class="icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
-    </button>
-    <div class="theme-menu" id="theme-menu" role="menu" aria-label="Theme" hidden></div>
-</div>
-
-                <!-- READER AVATAR
-                     A dynamic, data-driven avatar for the person reading --
-                     not a fake login. It reflects real local state (pages
-                     visited, overall progress, last page) tracked in
-                     localStorage, same convention as the Education theme's
-                     lesson-visited tracking. Hover shows a quick-glance
-                     tooltip + glow ring; click opens the full popover. -->
-                <div class="book-avatar" id="book-avatar">
-                    <button class="book-avatar-btn" id="avatar-toggle" type="button"
-                            aria-haspopup="true" aria-expanded="false" aria-controls="avatar-popover"
-                            aria-label="Your reading session">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="8.5" r="3.4"/>
-                            <path d="M5 20c1.2-3.6 4-5.4 7-5.4s5.8 1.8 7 5.4"/>
-                        </svg>
-                        <span class="book-avatar-ring" aria-hidden="true"></span>
-                    </button>
-                    <span class="book-avatar-tooltip" role="tooltip">Your reading session</span>
-
-                    <div class="book-avatar-popover" id="avatar-popover" role="dialog" aria-label="Your reading session" hidden>
-                        <div class="book-avatar-popover-header">
-                            <span class="book-avatar-popover-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="8.5" r="3.4"/>
-                                    <path d="M5 20c1.2-3.6 4-5.4 7-5.4s5.8 1.8 7 5.4"/>
-                                </svg>
-                            </span>
-                            <div>
-                                <p class="book-avatar-name">Reading session</p>
-                                <p class="book-avatar-sub">Tracked in this browser only</p>
-                            </div>
-                        </div>
-                        <div class="book-avatar-stats">
-                            <div class="book-avatar-stat">
-                                <span id="avatar-pages-read">0</span>
-                                <label>Pages visited</label>
-                            </div>
-                            <div class="book-avatar-stat">
-                                <span id="avatar-progress">0%</span>
-                                <label>Book progress</label>
-                            </div>
-                        </div>
-                        <button class="book-avatar-action" id="avatar-resume" type="button">Resume last page</button>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
 
-    <div class="book-sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="api-sidebar-overlay" id="sidebar-overlay"></div>
 
-    <div class="book-shell">
-        <!-- CONTENTS RAIL -->
-        <aside class="book-sidebar" id="sidebar">
-            <div class="book-sidebar-header">
-                <span>Contents</span>
-                <button class="book-sidebar-close" id="sidebar-close" type="button" aria-label="Close contents">
+    <div class="api-shell">
+        <aside class="api-sidebar" id="sidebar">
+            <div class="api-sidebar-header">
+                <span>/ docs</span>
+                <button class="api-sidebar-close" id="sidebar-close" type="button" aria-label="Close file tree">
                     <svg class="icon" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg>
                 </button>
             </div>
-            <nav class="book-nav">
+            <nav class="api-nav">
                 <ul>
                 
                     
@@ -176,8 +95,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../index.html" data-nav-link data-api-page="index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>home
+                                    </a>
                                 </li>
                             
                         
@@ -198,19 +119,21 @@
                                     
                                 
                             
-                            <li class="book-chapter" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="rebuild-workflow">
-                                    <span class="book-chapter-label">Rebuild Workflow</span>
-                                    <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                            <li class="api-section" data-nav-section style="--stagger:0">
+                                <button class="api-section-toggle" type="button" data-section="rebuild-workflow">
+                                    <svg class="icon api-section-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                                    <span class="api-section-label">rebuild-workflow/</span>
                                 </button>
-                                <ul class="book-chapter-pages" data-nav-submenu>
+                                <ul class="api-section-pages" data-nav-submenu>
                                     
                                         
                                             
                                                 
                                                 
-                                                <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
+                                                <li class="api-nav-item api-nav-item-sub">
+                                                    <a href="../../getting-started/before-you-begin.html" data-nav-link data-api-page="getting-started/before-you-begin.html" class="api-nav-link">
+                                                        <span class="api-nav-glyph" aria-hidden="true">#</span>before-you-begin
+                                                    </a>
                                                 </li>
                                             
                                         
@@ -219,8 +142,10 @@
                                             
                                                 
                                                 
-                                                <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
+                                                <li class="api-nav-item api-nav-item-sub">
+                                                    <a href="../../getting-started/local-setup.html" data-nav-link data-api-page="getting-started/local-setup.html" class="api-nav-link">
+                                                        <span class="api-nav-glyph" aria-hidden="true">#</span>local-setup
+                                                    </a>
                                                 </li>
                                             
                                         
@@ -229,8 +154,10 @@
                                             
                                                 
                                                 
-                                                <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
+                                                <li class="api-nav-item api-nav-item-sub">
+                                                    <a href="../../getting-started/environment.html" data-nav-link data-api-page="getting-started/environment.html" class="api-nav-link">
+                                                        <span class="api-nav-glyph" aria-hidden="true">#</span>environment-variables
+                                                    </a>
                                                 </li>
                                             
                                         
@@ -245,8 +172,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/index.html" data-nav-link data-book-page="projects/harbal-pakriti/index.html" class="book-nav-link">Harbal Pakriti — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/index.html" data-nav-link data-api-page="projects/harbal-pakriti/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -257,8 +186,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/setup.html" data-nav-link data-book-page="projects/harbal-pakriti/setup.html" class="book-nav-link">Harbal Pakriti — Setup</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/setup.html" data-nav-link data-api-page="projects/harbal-pakriti/setup.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-setup
+                                    </a>
                                 </li>
                             
                         
@@ -269,8 +200,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/features.html" data-nav-link data-book-page="projects/harbal-pakriti/features.html" class="book-nav-link">Harbal Pakriti — Features</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/features.html" data-nav-link data-api-page="projects/harbal-pakriti/features.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-features
+                                    </a>
                                 </li>
                             
                         
@@ -281,8 +214,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/environment.html" data-nav-link data-book-page="projects/harbal-pakriti/environment.html" class="book-nav-link">Harbal Pakriti — Environment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/environment.html" data-nav-link data-api-page="projects/harbal-pakriti/environment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-environment
+                                    </a>
                                 </li>
                             
                         
@@ -293,8 +228,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/pipeline.html" data-nav-link data-book-page="projects/harbal-pakriti/pipeline.html" class="book-nav-link">Harbal Pakriti — Pipeline</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/pipeline.html" data-nav-link data-api-page="projects/harbal-pakriti/pipeline.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-pipeline
+                                    </a>
                                 </li>
                             
                         
@@ -305,8 +242,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/deployment.html" data-nav-link data-book-page="projects/harbal-pakriti/deployment.html" class="book-nav-link">Harbal Pakriti — Deployment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/deployment.html" data-nav-link data-api-page="projects/harbal-pakriti/deployment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-deployment
+                                    </a>
                                 </li>
                             
                         
@@ -317,8 +256,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/whitelabel.html" data-nav-link data-book-page="projects/harbal-pakriti/whitelabel.html" class="book-nav-link">Harbal Pakriti — Whitelabel</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/whitelabel.html" data-nav-link data-api-page="projects/harbal-pakriti/whitelabel.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-whitelabel
+                                    </a>
                                 </li>
                             
                         
@@ -329,8 +270,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/troubleshooting.html" data-nav-link data-book-page="projects/harbal-pakriti/troubleshooting.html" class="book-nav-link">Harbal Pakriti — Troubleshooting</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/troubleshooting.html" data-nav-link data-api-page="projects/harbal-pakriti/troubleshooting.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-troubleshooting
+                                    </a>
                                 </li>
                             
                         
@@ -341,8 +284,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/harbal-pakriti/live-proof.html" data-nav-link data-book-page="projects/harbal-pakriti/live-proof.html" class="book-nav-link">Harbal Pakriti — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/harbal-pakriti/live-proof.html" data-nav-link data-api-page="projects/harbal-pakriti/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>harbal-pakriti-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -353,8 +298,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/index.html" data-nav-link data-book-page="projects/jewellery-and-fashion/index.html" class="book-nav-link">Jewellery and Fashion — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/index.html" data-nav-link data-api-page="projects/jewellery-and-fashion/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -365,8 +312,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/setup.html" data-nav-link data-book-page="projects/jewellery-and-fashion/setup.html" class="book-nav-link">Jewellery and Fashion — Setup</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/setup.html" data-nav-link data-api-page="projects/jewellery-and-fashion/setup.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-setup
+                                    </a>
                                 </li>
                             
                         
@@ -377,8 +326,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/features.html" data-nav-link data-book-page="projects/jewellery-and-fashion/features.html" class="book-nav-link">Jewellery and Fashion — Features</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/features.html" data-nav-link data-api-page="projects/jewellery-and-fashion/features.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-features
+                                    </a>
                                 </li>
                             
                         
@@ -389,8 +340,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/environment.html" data-nav-link data-book-page="projects/jewellery-and-fashion/environment.html" class="book-nav-link">Jewellery and Fashion — Environment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/environment.html" data-nav-link data-api-page="projects/jewellery-and-fashion/environment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-environment
+                                    </a>
                                 </li>
                             
                         
@@ -401,8 +354,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/pipeline.html" data-nav-link data-book-page="projects/jewellery-and-fashion/pipeline.html" class="book-nav-link">Jewellery and Fashion — Pipeline</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/pipeline.html" data-nav-link data-api-page="projects/jewellery-and-fashion/pipeline.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-pipeline
+                                    </a>
                                 </li>
                             
                         
@@ -413,8 +368,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/deployment.html" data-nav-link data-book-page="projects/jewellery-and-fashion/deployment.html" class="book-nav-link">Jewellery and Fashion — Deployment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/deployment.html" data-nav-link data-api-page="projects/jewellery-and-fashion/deployment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-deployment
+                                    </a>
                                 </li>
                             
                         
@@ -425,8 +382,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/whitelabel.html" data-nav-link data-book-page="projects/jewellery-and-fashion/whitelabel.html" class="book-nav-link">Jewellery and Fashion — Whitelabel</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/whitelabel.html" data-nav-link data-api-page="projects/jewellery-and-fashion/whitelabel.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-whitelabel
+                                    </a>
                                 </li>
                             
                         
@@ -437,8 +396,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/troubleshooting.html" data-nav-link data-book-page="projects/jewellery-and-fashion/troubleshooting.html" class="book-nav-link">Jewellery and Fashion — Troubleshooting</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/troubleshooting.html" data-nav-link data-api-page="projects/jewellery-and-fashion/troubleshooting.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-troubleshooting
+                                    </a>
                                 </li>
                             
                         
@@ -449,8 +410,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/jewellery-and-fashion/live-proof.html" data-nav-link data-book-page="projects/jewellery-and-fashion/live-proof.html" class="book-nav-link">Jewellery and Fashion — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/jewellery-and-fashion/live-proof.html" data-nav-link data-api-page="projects/jewellery-and-fashion/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>jewellery-and-fashion-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -461,8 +424,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/index.html" data-nav-link data-book-page="projects/babyshop/index.html" class="book-nav-link">Babyshop — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/index.html" data-nav-link data-api-page="projects/babyshop/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -473,8 +438,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/setup.html" data-nav-link data-book-page="projects/babyshop/setup.html" class="book-nav-link">Babyshop — Setup</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/setup.html" data-nav-link data-api-page="projects/babyshop/setup.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-setup
+                                    </a>
                                 </li>
                             
                         
@@ -485,8 +452,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/features.html" data-nav-link data-book-page="projects/babyshop/features.html" class="book-nav-link">Babyshop — Features</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/features.html" data-nav-link data-api-page="projects/babyshop/features.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-features
+                                    </a>
                                 </li>
                             
                         
@@ -497,8 +466,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/environment.html" data-nav-link data-book-page="projects/babyshop/environment.html" class="book-nav-link">Babyshop — Environment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/environment.html" data-nav-link data-api-page="projects/babyshop/environment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-environment
+                                    </a>
                                 </li>
                             
                         
@@ -509,8 +480,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/pipeline.html" data-nav-link data-book-page="projects/babyshop/pipeline.html" class="book-nav-link">Babyshop — Pipeline</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/pipeline.html" data-nav-link data-api-page="projects/babyshop/pipeline.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-pipeline
+                                    </a>
                                 </li>
                             
                         
@@ -521,8 +494,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/deployment.html" data-nav-link data-book-page="projects/babyshop/deployment.html" class="book-nav-link">Babyshop — Deployment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/deployment.html" data-nav-link data-api-page="projects/babyshop/deployment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-deployment
+                                    </a>
                                 </li>
                             
                         
@@ -533,8 +508,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/whitelabel.html" data-nav-link data-book-page="projects/babyshop/whitelabel.html" class="book-nav-link">Babyshop — Whitelabel</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/whitelabel.html" data-nav-link data-api-page="projects/babyshop/whitelabel.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-whitelabel
+                                    </a>
                                 </li>
                             
                         
@@ -545,8 +522,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/troubleshooting.html" data-nav-link data-book-page="projects/babyshop/troubleshooting.html" class="book-nav-link">Babyshop — Troubleshooting</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/troubleshooting.html" data-nav-link data-api-page="projects/babyshop/troubleshooting.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-troubleshooting
+                                    </a>
                                 </li>
                             
                         
@@ -557,8 +536,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/babyshop/live-proof.html" data-nav-link data-book-page="projects/babyshop/live-proof.html" class="book-nav-link">Babyshop — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/babyshop/live-proof.html" data-nav-link data-api-page="projects/babyshop/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>babyshop-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -569,8 +550,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/index.html" data-nav-link data-book-page="projects/arifgadget-store/index.html" class="book-nav-link">Arif Gadget Store — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/index.html" data-nav-link data-api-page="projects/arifgadget-store/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -581,8 +564,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/setup.html" data-nav-link data-book-page="projects/arifgadget-store/setup.html" class="book-nav-link">Arif Gadget Store — Setup</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/setup.html" data-nav-link data-api-page="projects/arifgadget-store/setup.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-setup
+                                    </a>
                                 </li>
                             
                         
@@ -593,8 +578,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/features.html" data-nav-link data-book-page="projects/arifgadget-store/features.html" class="book-nav-link">Arif Gadget Store — Features</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/features.html" data-nav-link data-api-page="projects/arifgadget-store/features.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-features
+                                    </a>
                                 </li>
                             
                         
@@ -605,8 +592,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/environment.html" data-nav-link data-book-page="projects/arifgadget-store/environment.html" class="book-nav-link">Arif Gadget Store — Environment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/environment.html" data-nav-link data-api-page="projects/arifgadget-store/environment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-environment
+                                    </a>
                                 </li>
                             
                         
@@ -617,8 +606,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/pipeline.html" data-nav-link data-book-page="projects/arifgadget-store/pipeline.html" class="book-nav-link">Arif Gadget Store — Pipeline</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/pipeline.html" data-nav-link data-api-page="projects/arifgadget-store/pipeline.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-pipeline
+                                    </a>
                                 </li>
                             
                         
@@ -629,8 +620,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/deployment.html" data-nav-link data-book-page="projects/arifgadget-store/deployment.html" class="book-nav-link">Arif Gadget Store — Deployment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/deployment.html" data-nav-link data-api-page="projects/arifgadget-store/deployment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-deployment
+                                    </a>
                                 </li>
                             
                         
@@ -641,8 +634,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/whitelabel.html" data-nav-link data-book-page="projects/arifgadget-store/whitelabel.html" class="book-nav-link">Arif Gadget Store — Whitelabel</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/whitelabel.html" data-nav-link data-api-page="projects/arifgadget-store/whitelabel.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-whitelabel
+                                    </a>
                                 </li>
                             
                         
@@ -653,8 +648,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/troubleshooting.html" data-nav-link data-book-page="projects/arifgadget-store/troubleshooting.html" class="book-nav-link">Arif Gadget Store — Troubleshooting</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/troubleshooting.html" data-nav-link data-api-page="projects/arifgadget-store/troubleshooting.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-troubleshooting
+                                    </a>
                                 </li>
                             
                         
@@ -665,8 +662,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/arifgadget-store/live-proof.html" data-nav-link data-book-page="projects/arifgadget-store/live-proof.html" class="book-nav-link">Arif Gadget Store — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/arifgadget-store/live-proof.html" data-nav-link data-api-page="projects/arifgadget-store/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>arif-gadget-store-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -677,8 +676,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/index.html" data-nav-link data-book-page="projects/lks-attire/index.html" class="book-nav-link">LKS Attire — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/index.html" data-nav-link data-api-page="projects/lks-attire/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -689,8 +690,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/setup.html" data-nav-link data-book-page="projects/lks-attire/setup.html" class="book-nav-link">LKS Attire — Setup</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/setup.html" data-nav-link data-api-page="projects/lks-attire/setup.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-setup
+                                    </a>
                                 </li>
                             
                         
@@ -701,8 +704,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/features.html" data-nav-link data-book-page="projects/lks-attire/features.html" class="book-nav-link">LKS Attire — Features</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/features.html" data-nav-link data-api-page="projects/lks-attire/features.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-features
+                                    </a>
                                 </li>
                             
                         
@@ -713,8 +718,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item active" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/environment.html" data-nav-link data-book-page="projects/lks-attire/environment.html" class="book-nav-link active">LKS Attire — Environment</a>
+                                <li class="api-nav-item active" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/environment.html" data-nav-link data-api-page="projects/lks-attire/environment.html" class="api-nav-link active">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-environment
+                                    </a>
                                 </li>
                             
                         
@@ -725,8 +732,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/pipeline.html" data-nav-link data-book-page="projects/lks-attire/pipeline.html" class="book-nav-link">LKS Attire — Pipeline</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/pipeline.html" data-nav-link data-api-page="projects/lks-attire/pipeline.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-pipeline
+                                    </a>
                                 </li>
                             
                         
@@ -737,8 +746,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/deployment.html" data-nav-link data-book-page="projects/lks-attire/deployment.html" class="book-nav-link">LKS Attire — Deployment</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/deployment.html" data-nav-link data-api-page="projects/lks-attire/deployment.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-deployment
+                                    </a>
                                 </li>
                             
                         
@@ -749,8 +760,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/whitelabel.html" data-nav-link data-book-page="projects/lks-attire/whitelabel.html" class="book-nav-link">LKS Attire — Whitelabel</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/whitelabel.html" data-nav-link data-api-page="projects/lks-attire/whitelabel.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-whitelabel
+                                    </a>
                                 </li>
                             
                         
@@ -761,8 +774,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/troubleshooting.html" data-nav-link data-book-page="projects/lks-attire/troubleshooting.html" class="book-nav-link">LKS Attire — Troubleshooting</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/troubleshooting.html" data-nav-link data-api-page="projects/lks-attire/troubleshooting.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-troubleshooting
+                                    </a>
                                 </li>
                             
                         
@@ -773,8 +788,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/lks-attire/live-proof.html" data-nav-link data-book-page="projects/lks-attire/live-proof.html" class="book-nav-link">LKS Attire — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/lks-attire/live-proof.html" data-nav-link data-api-page="projects/lks-attire/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>lks-attire-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -785,8 +802,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/sidra-glow-studio/index.html" data-nav-link data-book-page="projects/sidra-glow-studio/index.html" class="book-nav-link">Sidra Glow Studio — Overview</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/sidra-glow-studio/index.html" data-nav-link data-api-page="projects/sidra-glow-studio/index.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>sidra-glow-studio-—-overview
+                                    </a>
                                 </li>
                             
                         
@@ -797,8 +816,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../projects/sidra-glow-studio/live-proof.html" data-nav-link data-book-page="projects/sidra-glow-studio/live-proof.html" class="book-nav-link">Sidra Glow Studio — Live Proof</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../projects/sidra-glow-studio/live-proof.html" data-nav-link data-api-page="projects/sidra-glow-studio/live-proof.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>sidra-glow-studio-—-live-proof
+                                    </a>
                                 </li>
                             
                         
@@ -809,8 +830,10 @@
                             
                                 
                                 
-                                <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
+                                <li class="api-nav-item" style="--stagger:0">
+                                    <a href="../../contributing.html" data-nav-link data-api-page="contributing.html" class="api-nav-link">
+                                        <span class="api-nav-glyph" aria-hidden="true">#</span>contribution-guide
+                                    </a>
                                 </li>
                             
                         
@@ -820,18 +843,19 @@
             </nav>
         </aside>
 
-        <!-- PAGE -->
-        <main class="book-main">
-            <div class="book-page">
-                
-                <p class="book-chapter-eyebrow">Page 44 of 52</p>
-                
-                <h1 class="book-title">LKS Attire — Environment</h1>
-                <div class="book-rule" aria-hidden="true">&#10022;</div>
+        <main class="api-main">
+            <div class="api-page">
+                <p class="api-path-line">
+                    <span class="api-prompt">$</span> cat
+                    <span class="api-path-dim">44/52</span>
+                    projects/lks-attire/environment.html
+                </p>
+                <h1 class="api-title">LKS Attire — Environment<span class="api-cursor" aria-hidden="true"></span></h1>
 
-                <article class="book-content" data-current-path="projects/lks-attire/environment.html" data-progress="85">
+                <div class="api-content" data-current-path="projects/lks-attire/environment.html">
                     
-<h2 id="configuration-groups">Configuration groups</h2>
+<div class="api-body">
+    <h2 id="configuration-groups">Configuration groups</h2>
 
 <p>CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, WORKER_NAME, BRAND, PALETTE, PUBLIC_URL, BOOTSTRAP_TOKEN, admin values, DB/KV/ASSETS, optional MEDIA/AI, and bKash, SSLCommerz, courier, SMS, WhatsApp, Resend, and Turnstile variables.</p>
 
@@ -843,26 +867,21 @@
 
 <p>The main rebranding inputs are brand build configuration, generated tokens/assets, worker/wrangler.toml, catalog seed, public URL, and theme palette. Add a project-specific <code>.env.example</code> or configuration table when a new integration is introduced.</p>
 
+</div>
 
-                </article>
+                </div>
 
-                <div class="book-page-turn">
+                <div class="api-page-turn">
                     
-                    <a class="book-page-btn book-page-prev" href="../../projects/lks-attire/features.html">
-                        <span class="book-page-corner">&#10094;</span>
-                        <span>
-                            <span class="book-page-label">Previous</span>
-                            <span class="book-page-title">LKS Attire — Features</span>
-                        </span>
+                    <a class="api-page-btn api-page-prev" href="../../projects/lks-attire/features.html">
+                        <span class="api-page-label">&lt; cd ../</span>
+                        <span class="api-page-title">LKS Attire — Features</span>
                     </a>
                     
                     
-                    <a class="book-page-btn book-page-next" href="../../projects/lks-attire/pipeline.html">
-                        <span>
-                            <span class="book-page-label">Next</span>
-                            <span class="book-page-title">LKS Attire — Pipeline</span>
-                        </span>
-                        <span class="book-page-corner">&#10095;</span>
+                    <a class="api-page-btn api-page-next" href="../../projects/lks-attire/pipeline.html">
+                        <span class="api-page-label">cd ./next &gt;</span>
+                        <span class="api-page-title">LKS Attire — Pipeline</span>
                     </a>
                     
                 </div>
@@ -870,14 +889,13 @@
         </main>
     </div>
 
-    <footer class="book-footer">
-        <div class="book-container">
-            <p class="book-footer-copy">&copy; 2026 <a href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/">Bayzed123</a> &middot; Built with SmartGen Docs &middot; <a href="https://github.com/bayeziddev/smartGenDocs" target="_blank" rel="noopener">GitHub</a></p>
+    <footer class="api-footer">
+        <div class="api-container">
+            <p class="api-footer-copy">&copy; 2026 <a href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/">Bayzed123</a> &middot; Built with SmartGen Docs &middot; <a href="https://github.com/bayeziddev/smartGenDocs" target="_blank" rel="noopener">GitHub</a></p>
         </div>
     </footer>
 
     <script>
-        // ========== SIDEBAR TOGGLE (Mobile) ==========
         const menuToggle = document.getElementById('menu-toggle');
         const sidebar = document.getElementById('sidebar');
         const sidebarClose = document.getElementById('sidebar-close');
@@ -888,34 +906,14 @@
         sidebarClose.addEventListener('click', closeSidebar);
         sidebarOverlay.addEventListener('click', closeSidebar);
 
-        // ========== CHAPTER EXPAND/COLLAPSE ==========
-        document.querySelectorAll('.book-chapter-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => toggle.closest('.book-chapter').classList.toggle('expanded'));
+        document.querySelectorAll('.api-section-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => toggle.closest('.api-section').classList.toggle('expanded'));
         });
 
-        // ========== FOCUSED READING MODE ==========
         (function () {
-            const KEY = 'smartgen-book-focus';
-            const toggle = document.getElementById('focus-toggle');
-            function setFocus(on) {
-                document.body.classList.toggle('book-focus', on);
-                toggle.setAttribute('aria-pressed', String(on));
-            }
-            let saved = false;
-            try { saved = localStorage.getItem(KEY) === '1'; } catch (e) { /* ignore */ }
-            setFocus(saved);
-            toggle.addEventListener('click', () => {
-                const on = !document.body.classList.contains('book-focus');
-                setFocus(on);
-                try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) { /* ignore */ }
-            });
-        })();
-
-        // ========== SCROLL READING PROGRESS + HEADER MOTION ==========
-        (function () {
-            const fill = document.getElementById('book-progress-fill');
-            const article = document.querySelector('.book-content');
-            const header = document.getElementById('book-header');
+            const fill = document.getElementById('api-progress-fill');
+            const article = document.querySelector('.api-content');
+            const header = document.getElementById('api-header');
             if (!fill || !article) return;
             function update() {
                 const rect = article.getBoundingClientRect();
@@ -930,27 +928,22 @@
             update();
         })();
 
-        // ========== SCROLL-IN REVEAL FOR CONTENT ==========
         (function () {
             const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            const items = document.querySelectorAll('.book-content > *');
+            const items = document.querySelectorAll('.api-content > *');
             if (reduceMotion || !('IntersectionObserver' in window)) {
                 items.forEach(el => el.classList.add('is-visible'));
                 return;
             }
             const io = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        io.unobserve(entry.target);
-                    }
+                    if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
                 });
-            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+            }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
             items.forEach(el => io.observe(el));
         })();
 
-        // ========== COPY CODE BUTTON ==========
-        document.querySelectorAll('.book-content pre').forEach(block => {
+        document.querySelectorAll('.api-content pre').forEach(block => {
             const button = document.createElement('button');
             button.className = 'copy-code-btn';
             button.innerHTML = '<span>Copy</span>';
@@ -965,80 +958,6 @@
             block.style.position = 'relative';
             block.appendChild(button);
         });
-
-        // ========== READER AVATAR: session tracking + popover ==========
-        (function () {
-            const PAGES_KEY = 'smartgen-book-pages-read';
-            const LAST_KEY = 'smartgen-book-last-page';
-            const article = document.querySelector('.book-content');
-            const here = article ? article.dataset.currentPath : '';
-            const progress = article ? parseInt(article.dataset.progress, 10) || 0 : 0;
-
-            // Capture the page the reader was on BEFORE this one, while it's
-            // still in localStorage -- this is the real "resume" target for
-            // this page view. (Reading it AFTER we overwrite LAST_KEY below
-            // would always return the current page, which is why "Resume"
-            // used to silently do nothing.)
-            let resumeTarget = null;
-            try { resumeTarget = localStorage.getItem(LAST_KEY); } catch (e) { resumeTarget = null; }
-            if (resumeTarget === here) resumeTarget = null;
-
-            let visited = [];
-            try { visited = JSON.parse(localStorage.getItem(PAGES_KEY) || '[]'); } catch (e) { visited = []; }
-            if (here && !visited.includes(here)) visited.push(here);
-
-            // First visit ever, or the only prior page was this one: fall
-            // back to the most recently visited page that isn't this one.
-            if (!resumeTarget) {
-                for (let i = visited.length - 2; i >= 0; i--) {
-                    if (visited[i] !== here) { resumeTarget = visited[i]; break; }
-                }
-            }
-
-            try {
-                localStorage.setItem(PAGES_KEY, JSON.stringify(visited));
-                if (here) localStorage.setItem(LAST_KEY, here);
-            } catch (e) { /* ignore */ }
-
-            const pagesEl = document.getElementById('avatar-pages-read');
-            const progressEl = document.getElementById('avatar-progress');
-            if (pagesEl) pagesEl.textContent = String(visited.length);
-            if (progressEl) progressEl.textContent = progress + '%';
-
-            const avatar = document.getElementById('book-avatar');
-            const avatarToggle = document.getElementById('avatar-toggle');
-            const avatarPopover = document.getElementById('avatar-popover');
-            const avatarResume = document.getElementById('avatar-resume');
-            if (!avatar || !avatarToggle || !avatarPopover) return;
-
-            function openPopover() {
-                avatarPopover.hidden = false;
-                avatarToggle.setAttribute('aria-expanded', 'true');
-            }
-            function closePopover() {
-                avatarPopover.hidden = true;
-                avatarToggle.setAttribute('aria-expanded', 'false');
-            }
-            avatarToggle.addEventListener('click', () => {
-                avatarPopover.hidden ? openPopover() : closePopover();
-            });
-            document.addEventListener('click', (e) => {
-                if (!avatarPopover.hidden && !avatar.contains(e.target)) closePopover();
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && !avatarPopover.hidden) { closePopover(); avatarToggle.focus(); }
-            });
-            if (avatarResume) {
-                if (resumeTarget) {
-                    avatarResume.addEventListener('click', () => {
-                        window.location.href = resumeTarget;
-                    });
-                } else {
-                    avatarResume.disabled = true;
-                    avatarResume.textContent = "You're all caught up";
-                }
-            }
-        })();
     </script>
     
 <script>
@@ -1070,7 +989,7 @@
 <script>
 (function () {
     const THEME_KEY = 'smartgen-theme';
-    const THEMES = [{"label": "Day", "swatch_bg": "#F5F6F3", "swatch_fg": "#1F3A5F", "value": "light"}, {"label": "Night", "swatch_bg": "#14171C", "swatch_fg": "#7C9CC4", "value": "dark"}];
+    const THEMES = [{"label": "Day", "swatch_bg": "#F5F7F5", "swatch_fg": "#22C55E", "value": "light"}, {"label": "Night", "swatch_bg": "#0B0F0C", "swatch_fg": "#4ADE80", "value": "dark"}];
 
     const themeSwitcher = document.getElementById('theme-switcher');
     if (!themeSwitcher || !THEMES.length) return;
@@ -1154,21 +1073,6 @@
     });
 })();
 </script>
-    
-<div class="style-switcher" id="style-switcher">
-    <button class="style-switcher-btn" id="style-switcher-toggle" type="button"
-            aria-haspopup="true" aria-expanded="false" aria-controls="style-switcher-menu"
-            aria-label="Switch site style">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 21a9 9 0 1 1 0-18c4.97 0 9 3.582 9 8 0 2.21-1.79 3-4 3h-2.2a1.8 1.8 0 0 0-1.026 3.278A1.8 1.8 0 0 1 12.774 21H12Z"/>
-            <circle cx="7.2" cy="12" r="1.15" fill="currentColor" stroke="none"/>
-            <circle cx="9.8" cy="7.4" r="1.15" fill="currentColor" stroke="none"/>
-            <circle cx="15" cy="7.4" r="1.15" fill="currentColor" stroke="none"/>
-        </svg>
-        <span class="style-switcher-label">Styles</span>
-    </button>
-    <div class="style-switcher-menu" id="style-switcher-menu" role="menu" aria-label="Site style" hidden></div>
-</div>
 
 <style>
     .style-switcher {
@@ -1293,7 +1197,7 @@
         .style-switcher-btn { padding: 12px; border-radius: 50%; }
     }
 </style>
-    
+
 <script>
 (function () {
     var STYLES = [
@@ -1308,7 +1212,7 @@
 
     // The root site is the configured primary theme. Alternate themes live
     // under /styles/<theme>, including the primary theme's own variant.
-    var PRIMARY_STYLE = "book";
+    var PRIMARY_STYLE = "apiplay";
     if (PRIMARY_STYLE === 'premium') PRIMARY_STYLE = 'default';
     var STYLE_NAMES = STYLES.map(function (s) { return s.value; });
 

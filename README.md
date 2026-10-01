@@ -1,6 +1,6 @@
 # Developer Docs
 
-Reusable multi-page setup, feature, pipeline, deployment, and whitelabel rebranding guides for Bayzed123 projects. Built with [SmartGen Docs](https://pypi.org/project/smartgen-docs/) in the reading-first style of [docs.smartgentools.com](https://docs.smartgentools.com).
+Reusable multi-page setup, feature, pipeline, deployment, and whitelabel rebranding guides for Bayzed123 projects. Built with [SmartGen Docs](https://pypi.org/project/smartgen-docs/) using the fixed **API Playground** theme. The theme switcher is intentionally disabled so the site has no theme-change button.
 
 ## Folder-based project guides
 
