@@ -4,7 +4,7 @@
 
 The storefront route returned **HTTP 200** during the longer Playwright verification pass. The admin route returned **HTTP 200** and rendered the page title **Zamil Shop Bd · Baby & Kids**.
 
-> HTTP status and screenshots prove that the routes responded at capture time. They do not prove authenticated admin access, database correctness, payment success, checkout completion, backups, or security. The admin screenshots show the public entry/login surface only; no credentials were entered.
+> HTTP status and screenshots prove that the routes responded at capture time. They do not prove authenticated admin access, database correctness, payment success, checkout completion, backups, or security. The Zamil admin route rendered dashboard content without credentials being entered; treat that as demo/public-route evidence, not as proof that production access control is correctly configured.
 
 ## Live links
 
