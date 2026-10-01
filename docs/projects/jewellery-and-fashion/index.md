@@ -46,3 +46,7 @@ Replace placeholder domain, contact, location, catalog, prices, and stock. Use N
 ## Known limits
 
 No live homepage was present in GitHub metadata. Tests and deployment were not run during the audit. Customer data and abandoned-checkout records require explicit access, retention, consent, provider, and backup controls. The repository has no visible dependency vulnerability audit or static security scan.
+
+## Live proof
+
+The supplied deployment URLs and Playwright storefront/admin screenshots are recorded in the [Live Proof](live-proof.md) page.

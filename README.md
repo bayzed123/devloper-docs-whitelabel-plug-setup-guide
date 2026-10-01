@@ -15,7 +15,8 @@ docs/projects/<project>/
 ├── pipeline.md
 ├── deployment.md
 ├── whitelabel.md
-└── troubleshooting.md
+├── troubleshooting.md
+└── live-proof.md
 ```
 
 Projects covered:
@@ -28,7 +29,11 @@ Projects covered:
 
 ## Rebuild order
 
-For any client, read the folder's `index.md`, then follow Setup, Environment, Features, Pipeline, Deployment, Whitelabel Rebranding, and Troubleshooting. Install from the lockfile, use a fresh local database, configure isolated client secrets, replace all placeholders, run tests and health checks, and record the deployed commit.
+For any client, read the folder's `index.md`, then follow Setup, Environment, Features, Pipeline, Deployment, Whitelabel Rebranding, Troubleshooting, and Live Proof. Install from the lockfile, use a fresh local database, configure isolated client secrets, replace all placeholders, run tests and health checks, and record the deployed commit.
+
+## Live proof
+
+The supplied Worker URLs and their `/admin/` routes are recorded in each project's `live-proof.md` page with Playwright storefront and admin-entry screenshots. The screenshots prove HTTP 200 route response at capture time; they do not prove authenticated admin access, checkout, payment success, data correctness, backups, or security. Sidra Glow Studio is documented as live-only because no source repository was supplied for it.
 
 ## Local docs development
 

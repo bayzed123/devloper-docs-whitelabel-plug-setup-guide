@@ -35,6 +35,13 @@ jobs:
       - name: Copy documentation assets
         run: cp -R docs/assets site/assets
 
+      - name: Copy project live-proof screenshots
+        run: |
+          for project in sidra-glow-studio harbal-pakriti jewellery-and-fashion lks-attire babyshop; do
+            mkdir -p "site/projects/$project/live-proof"
+            cp docs/projects/$project/live-proof/*.png "site/projects/$project/live-proof/"
+          done
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

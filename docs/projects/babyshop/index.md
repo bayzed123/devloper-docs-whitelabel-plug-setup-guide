@@ -44,3 +44,7 @@ Replace sample domain, contact, location, catalog, images, prices, and stock. Ve
 ## Known limits
 
 No live homepage was present in GitHub metadata. This audit did not run tests or deployment. bKash defaults to sandbox unless configured otherwise; provider onboarding is required. Customer PII is present in application data and backups.
+
+## Live proof
+
+The supplied deployment URLs and Playwright storefront/admin screenshots are recorded in the [Live Proof](live-proof.md) page.

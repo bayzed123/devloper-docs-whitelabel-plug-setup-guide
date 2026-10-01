@@ -37,6 +37,7 @@ nav:
   - Harbal Pakriti — Deployment: projects/harbal-pakriti/deployment.md
   - Harbal Pakriti — Whitelabel: projects/harbal-pakriti/whitelabel.md
   - Harbal Pakriti — Troubleshooting: projects/harbal-pakriti/troubleshooting.md
+  - Harbal Pakriti — Live Proof: projects/harbal-pakriti/live-proof.md
   - Jewellery and Fashion — Overview: projects/jewellery-and-fashion/index.md
   - Jewellery and Fashion — Setup: projects/jewellery-and-fashion/setup.md
   - Jewellery and Fashion — Features: projects/jewellery-and-fashion/features.md
@@ -45,6 +46,7 @@ nav:
   - Jewellery and Fashion — Deployment: projects/jewellery-and-fashion/deployment.md
   - Jewellery and Fashion — Whitelabel: projects/jewellery-and-fashion/whitelabel.md
   - Jewellery and Fashion — Troubleshooting: projects/jewellery-and-fashion/troubleshooting.md
+  - Jewellery and Fashion — Live Proof: projects/jewellery-and-fashion/live-proof.md
   - Babyshop — Overview: projects/babyshop/index.md
   - Babyshop — Setup: projects/babyshop/setup.md
   - Babyshop — Features: projects/babyshop/features.md
@@ -53,6 +55,7 @@ nav:
   - Babyshop — Deployment: projects/babyshop/deployment.md
   - Babyshop — Whitelabel: projects/babyshop/whitelabel.md
   - Babyshop — Troubleshooting: projects/babyshop/troubleshooting.md
+  - Babyshop — Live Proof: projects/babyshop/live-proof.md
   - Arif Gadget Store — Overview: projects/arifgadget-store/index.md
   - Arif Gadget Store — Setup: projects/arifgadget-store/setup.md
   - Arif Gadget Store — Features: projects/arifgadget-store/features.md
@@ -61,6 +64,7 @@ nav:
   - Arif Gadget Store — Deployment: projects/arifgadget-store/deployment.md
   - Arif Gadget Store — Whitelabel: projects/arifgadget-store/whitelabel.md
   - Arif Gadget Store — Troubleshooting: projects/arifgadget-store/troubleshooting.md
+  - Arif Gadget Store — Live Proof: projects/arifgadget-store/live-proof.md
   - LKS Attire — Overview: projects/lks-attire/index.md
   - LKS Attire — Setup: projects/lks-attire/setup.md
   - LKS Attire — Features: projects/lks-attire/features.md
@@ -69,4 +73,7 @@ nav:
   - LKS Attire — Deployment: projects/lks-attire/deployment.md
   - LKS Attire — Whitelabel: projects/lks-attire/whitelabel.md
   - LKS Attire — Troubleshooting: projects/lks-attire/troubleshooting.md
+  - LKS Attire — Live Proof: projects/lks-attire/live-proof.md
+  - Sidra Glow Studio — Overview: projects/sidra-glow-studio/index.md
+  - Sidra Glow Studio — Live Proof: projects/sidra-glow-studio/live-proof.md
   - Contribution Guide: contributing.md

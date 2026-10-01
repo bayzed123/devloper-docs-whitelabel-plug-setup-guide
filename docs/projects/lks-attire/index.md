@@ -48,3 +48,7 @@ The latest five scheduled D1 backup workflow runs were observed as failed; the l
 ## Known limits
 
 No live homepage was present in GitHub metadata. Tests, deployment, and security controls were inspected but not independently executed. Cloudflare IDs are placeholders until provisioning runs.
+
+## Live proof
+
+The supplied deployment URLs and Playwright storefront/admin screenshots are recorded in the [Live Proof](live-proof.md) page.

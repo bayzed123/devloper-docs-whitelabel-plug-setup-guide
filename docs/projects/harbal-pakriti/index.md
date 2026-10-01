@@ -44,3 +44,7 @@ Replace placeholder contact details, delivery fees, catalog, prices, stock, batc
 ## Known limits
 
 No live homepage was present in GitHub metadata. Build, tests, deployment, integrations, DNS, and security headers were inspected but not executed in this audit. D1/KV IDs are placeholders until provisioning runs.
+
+## Live proof
+
+The supplied deployment URLs and Playwright storefront/admin screenshots are recorded in the [Live Proof](live-proof.md) page.
