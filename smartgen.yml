@@ -1,0 +1,38 @@
+site_name: Developer Docs
+site_url: https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/
+site_author: Bayzed123
+site_description: Setup and deployment documentation for Bayzed123 web projects.
+repo_name: bayzed123/devloper-docs-whitelabel-plug-setup-guide
+repo_url: https://github.com/bayzed123/devloper-docs-whitelabel-plug-setup-guide
+
+language: en
+
+theme:
+  name: book
+  palette:
+    primary: "#4A3AE3"
+    accent: "#C2660D"
+
+style_switcher:
+  enabled: true
+  variants:
+    - book
+    - default
+    - techblog
+    - agency
+    - education
+    - medicine
+    - apiplay
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Before You Begin: getting-started/before-you-begin.md
+      - Local Setup: getting-started/local-setup.md
+      - Environment Variables: getting-started/environment.md
+  - Skin-care-shop:
+      - Project Setup: projects/skin-care-shop/setup.md
+      - Scripts and Workflow: projects/skin-care-shop/workflow.md
+      - Production Deployment: projects/skin-care-shop/deployment.md
+      - Troubleshooting: projects/skin-care-shop/troubleshooting.md
+  - Contribution Guide: contributing.md

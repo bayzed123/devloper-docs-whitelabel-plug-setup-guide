@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/sitemap.xml
