@@ -32,6 +32,9 @@ jobs:
       - name: Build site
         run: smartgen-docs build
 
+      - name: Copy documentation assets
+        run: cp -R docs/assets site/assets
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

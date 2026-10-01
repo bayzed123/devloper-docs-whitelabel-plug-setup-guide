@@ -1,7 +1,7 @@
 site_name: Developer Docs
 site_url: https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/
 site_author: Bayzed123
-site_description: Setup and deployment documentation for Bayzed123 web projects.
+site_description: Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.
 repo_name: bayzed123/devloper-docs-whitelabel-plug-setup-guide
 repo_url: https://github.com/bayzed123/devloper-docs-whitelabel-plug-setup-guide
 
@@ -26,13 +26,14 @@ style_switcher:
 
 nav:
   - Home: index.md
-  - Getting Started:
+  - Rebuild Workflow:
       - Before You Begin: getting-started/before-you-begin.md
       - Local Setup: getting-started/local-setup.md
       - Environment Variables: getting-started/environment.md
-  - Skin-care-shop:
-      - Project Setup: projects/skin-care-shop/setup.md
-      - Scripts and Workflow: projects/skin-care-shop/workflow.md
-      - Production Deployment: projects/skin-care-shop/deployment.md
-      - Troubleshooting: projects/skin-care-shop/troubleshooting.md
+  - Projects:
+      - Harbal Pakriti: projects/harbal-pakriti.md
+      - Jewellery and Fashion: projects/jewellery-and-fashion.md
+      - Babyshop: projects/babyshop.md
+      - Arif Gadget Store: projects/arifgadget-store.md
+      - LKS Attire: projects/lks-attire.md
   - Contribution Guide: contributing.md

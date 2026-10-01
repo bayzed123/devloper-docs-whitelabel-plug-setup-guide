@@ -23,16 +23,16 @@
     } catch (e) { /* localStorage unavailable (e.g. privacy mode) -- fall back to default */ }
 })();
 </script>
-    <meta name="description" content="Setup and deployment documentation for Bayzed123 web projects.">
+    <meta name="description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
     
-    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/deployment.html">
-    <meta property="og:title" content="Production Deployment - Developer Docs">
-    <meta property="og:description" content="Setup and deployment documentation for Bayzed123 web projects.">
-    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/deployment.html">
+    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire.html">
+    <meta property="og:title" content="LKS Attire - Developer Docs">
+    <meta property="og:description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
+    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/lks-attire.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <title>Production Deployment - Developer Docs</title>
-    <link rel="stylesheet" href="../../static/book/css/book.css">
+    <title>LKS Attire - Developer Docs</title>
+    <link rel="stylesheet" href="../static/book/css/book.css">
     <noscript><style>.book-content > * { opacity: 1 !important; transform: none !important; }</style></noscript>
     
     <style>
@@ -78,13 +78,13 @@
             <button class="book-menu-toggle" id="menu-toggle" type="button" aria-label="Toggle contents">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
             </button>
-            <a class="book-brand" href="../../index.html">
+            <a class="book-brand" href="../index.html">
                 <span class="book-brand-mark" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/><path d="M12 6v13"/></svg>
                 </span>
                 <span class="book-brand-name">Developer Docs</span>
             </a>
-            <span class="book-running-title">Production Deployment</span>
+            <span class="book-running-title">LKS Attire</span>
 
             <div class="book-search">
                 <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
@@ -177,7 +177,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
+                                    <a href="../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
                                 </li>
                             
                         
@@ -199,8 +199,8 @@
                                 
                             
                             <li class="book-chapter" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="getting-started">
-                                    <span class="book-chapter-label">Getting Started</span>
+                                <button class="book-chapter-toggle" type="button" data-section="rebuild-workflow">
+                                    <span class="book-chapter-label">Rebuild Workflow</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -210,7 +210,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
+                                                    <a href="../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
                                                 </li>
                                             
                                         
@@ -220,7 +220,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
+                                                    <a href="../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
                                                 </li>
                                             
                                         
@@ -230,7 +230,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
+                                                    <a href="../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
                                                 </li>
                                             
                                         
@@ -253,17 +253,21 @@
                             
                                 
                                     
+                                
+                            
+                                
+                                    
+                                
+                            
+                                
+                                    
                                         
                                     
                                 
                             
-                                
-                                    
-                                
-                            
                             <li class="book-chapter expanded" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="skin-care-shop">
-                                    <span class="book-chapter-label">Skin-care-shop</span>
+                                <button class="book-chapter-toggle" type="button" data-section="projects">
+                                    <span class="book-chapter-label">Projects</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -273,7 +277,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/setup.html" data-nav-link data-book-page="projects/skin-care-shop/setup.html" class="book-nav-link">Project Setup</a>
+                                                    <a href="../projects/harbal-pakriti.html" data-nav-link data-book-page="projects/harbal-pakriti.html" class="book-nav-link">Harbal Pakriti</a>
                                                 </li>
                                             
                                         
@@ -283,7 +287,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/workflow.html" data-nav-link data-book-page="projects/skin-care-shop/workflow.html" class="book-nav-link">Scripts and Workflow</a>
+                                                    <a href="../projects/jewellery-and-fashion.html" data-nav-link data-book-page="projects/jewellery-and-fashion.html" class="book-nav-link">Jewellery and Fashion</a>
                                                 </li>
                                             
                                         
@@ -293,7 +297,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/deployment.html" data-nav-link data-book-page="projects/skin-care-shop/deployment.html" class="book-nav-link active">Production Deployment</a>
+                                                    <a href="../projects/babyshop.html" data-nav-link data-book-page="projects/babyshop.html" class="book-nav-link">Babyshop</a>
                                                 </li>
                                             
                                         
@@ -303,7 +307,17 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/troubleshooting.html" data-nav-link data-book-page="projects/skin-care-shop/troubleshooting.html" class="book-nav-link">Troubleshooting</a>
+                                                    <a href="../projects/arifgadget-store.html" data-nav-link data-book-page="projects/arifgadget-store.html" class="book-nav-link">Arif Gadget Store</a>
+                                                </li>
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                <li class="book-nav-item book-nav-item-sub">
+                                                    <a href="../projects/lks-attire.html" data-nav-link data-book-page="projects/lks-attire.html" class="book-nav-link active">LKS Attire</a>
                                                 </li>
                                             
                                         
@@ -319,7 +333,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
+                                    <a href="../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
                                 </li>
                             
                         
@@ -333,90 +347,83 @@
         <main class="book-main">
             <div class="book-page">
                 
-                <p class="book-chapter-eyebrow">Page 7 of 9</p>
+                <p class="book-chapter-eyebrow">Page 9 of 10</p>
                 
-                <h1 class="book-title">Production Deployment</h1>
+                <h1 class="book-title">LKS Attire</h1>
                 <div class="book-rule" aria-hidden="true">&#10022;</div>
 
-                <article class="book-content" data-current-path="projects/skin-care-shop/deployment.html" data-progress="78">
+                <article class="book-content" data-current-path="projects/lks-attire.html" data-progress="90">
                     
-<p>The correct deployment target cannot be selected until the framework and runtime are confirmed. A static frontend, server-rendered app, and full-stack app have different hosting requirements.</p>
+<h1 id="lks-attire">LKS Attire</h1>
 
-<h2 id="deployment-decision">Deployment decision</h2>
+<p>Repository: <a href="https://github.com/bayzed123/lks-attire">bayzed123/lks-attire</a><br />
+Audited commit: <code>f8b3c7ab2c1a1a628e4a8c45bf842571576da90c</code> on <code>main</code></p>
 
-<table>
-<thead>
-<tr>
-  <th>Application shape</th>
-  <th>Suitable target</th>
-  <th>Required confirmation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Static frontend</td>
-  <td>GitHub Pages, Cloudflare Pages, Netlify, or similar</td>
-  <td>Build output directory and client-side routing fallback</td>
-</tr>
-<tr>
-  <td>Server-rendered app</td>
-  <td>Vercel, Netlify, a Node host, or equivalent</td>
-  <td>Runtime version, start command, and server environment</td>
-</tr>
-<tr>
-  <td>Full-stack app</td>
-  <td>Provider with frontend, API, database, and secret support</td>
-  <td>Migrations, backups, CORS, auth callbacks, and service credentials</td>
-</tr>
-</tbody>
-</table>
+<h2 id="what-this-project-is">What this project is</h2>
 
-<h2 id="pre-deployment-checklist">Pre-deployment checklist</h2>
+<p>A bilingual Bangla/English mobile-first fashion storefront and admin system on Cloudflare Workers. It uses Hono, TypeScript, D1, KV, Worker Static Assets, optional R2, optional Workers AI, Vitest, and Playwright.</p>
 
-<ul>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> Repository access and framework are confirmed.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> Production build succeeds in CI.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> All required production variables are configured securely.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> API URLs, auth callback URLs, CORS, and allowed origins use the production domain.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> No development credentials or localhost URLs remain.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> Client-side routes have a fallback configuration where needed.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> Images and static assets use production-safe paths.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> Error monitoring and analytics are configured if required.</li>
-<li><input type="checkbox" class="task-list-item-checkbox" disabled> A rollback commit or previous deployment is available.</li>
-</ul>
+<h2 id="documented-features">Documented features</h2>
 
-<h2 id="verify-after-deployment">Verify after deployment</h2>
+<p>The source covers browse/search/category/product/cart/checkout, guest checkout, accounts, tracking, wishlist, reviews, size guide, variants and stock, discounts and coupons, Bangladesh address and delivery zones, invoices, admin orders/products/inventory/customers/coupons/banners/reviews/zones/staff/reports/settings/help/audit, SEO/sitemap/structured data, PWA, and brand-configurable themes.</p>
 
-<ol>
-<li>Open the production URL in a private browser window.</li>
-<li>Test the primary shopping journey from landing page to checkout/contact completion.</li>
-<li>Refresh a nested route directly.</li>
-<li>Test the mobile viewport.</li>
-<li>Inspect browser console and network failures.</li>
-<li>Confirm secrets are not present in generated client bundles.</li>
-<li>Record the deployed commit SHA and date in the release notes.</li>
-</ol>
+<p>COD and manual bKash/Nagad/Rocket are supported. bKash Tokenized and SSLCommerz are conditional; Nagad API is explicitly a stub, and Pathao/RedX booking is not implemented.</p>
 
-<p>Do not publish provider-specific commands until the app repository's build output and deployment configuration have been inspected.</p>
+<h2 id="local-rebuild">Local rebuild</h2>
+
+<div class="codehilite">
+<pre><span></span><code>npm<span class="w"> </span>ci
+cp<span class="w"> </span>.dev.vars.example<span class="w"> </span>.dev.vars
+npm<span class="w"> </span>run<span class="w"> </span>build
+npm<span class="w"> </span>run<span class="w"> </span>db:migrate:local
+npm<span class="w"> </span>run<span class="w"> </span>db:seed:local
+node<span class="w"> </span>scripts/create-admin.mjs<span class="w"> </span><span class="s2">"Owner"</span><span class="w"> </span>owner@example.com<span class="w"> </span><span class="s1">'Choose-A-Long-Password'</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/admin.sql
+npx<span class="w"> </span>wrangler<span class="w"> </span>d1<span class="w"> </span>execute<span class="w"> </span>DB<span class="w"> </span>--local<span class="w"> </span>--file<span class="o">=</span>/tmp/admin.sql
+rm<span class="w"> </span>/tmp/admin.sql
+npm<span class="w"> </span>run<span class="w"> </span>dev
+</code></pre>
+</div>
+
+<p>The documented local storefront is <code>http://localhost:8787</code>; admin is <code>/admin/</code>. Run <code>npm run typecheck</code>, <code>npm test</code>, and <code>npm run test:e2e</code> before deployment.</p>
+
+<h2 id="scripts-and-pipeline">Scripts and pipeline</h2>
+
+<p>Use <code>brand:build</code>/<code>build</code>, typecheck, dev, migration and seed scripts, admin creation, test, E2E, and deploy. CI installs Node 22, builds brand assets, typechecks, runs Vitest and Playwright Chromium, then deploys after provisioning D1/KV/R2, migrating, seeding, and optionally creating an admin. Deployment health is retried up to five times and links are published in the workflow summary.</p>
+
+<h2 id="production-variables">Production variables</h2>
+
+<p>Required secrets are <code>CLOUDFLARE_API_TOKEN</code> and <code>CLOUDFLARE_ACCOUNT_ID</code>; configure admin values, <code>WORKER_NAME</code>, <code>BRAND</code>, <code>PALETTE</code>, <code>PUBLIC_URL</code>, <code>BOOTSTRAP_TOKEN</code>, bindings, and the documented bKash, SSLCommerz, courier, SMS, WhatsApp, Resend, Turnstile, and optional AI variables. Secret presence could not be verified because the GitHub secrets API returned 403.</p>
+
+<h2 id="deployment-checklist">Deployment checklist</h2>
+
+<p>Replace placeholder contact, phone, email, domain, WhatsApp number, and demo catalog. Configure custom routes and <code>PUBLIC_URL</code>, verify media storage and R2 backup behavior, test all configured payment and notification integrations, and close the admin bootstrap path.</p>
+
+<h2 id="critical-pipeline-warning">Critical pipeline warning</h2>
+
+<p>The latest five scheduled D1 backup workflow runs were observed as failed; the latest failed during <strong>Export D1</strong>, and artifact upload was skipped. The exact cause is unknown. Fix and verify a successful backup plus restore before treating this project as production-ready.</p>
+
+<h2 id="known-limits">Known limits</h2>
+
+<p>No live homepage was present in GitHub metadata. Tests, deployment, and security controls were inspected but not independently executed. Cloudflare IDs are placeholders until provisioning runs.</p>
 
 
                 </article>
 
                 <div class="book-page-turn">
                     
-                    <a class="book-page-btn book-page-prev" href="../../projects/skin-care-shop/workflow.html">
+                    <a class="book-page-btn book-page-prev" href="../projects/arifgadget-store.html">
                         <span class="book-page-corner">&#10094;</span>
                         <span>
                             <span class="book-page-label">Previous</span>
-                            <span class="book-page-title">Scripts and Workflow</span>
+                            <span class="book-page-title">Arif Gadget Store</span>
                         </span>
                     </a>
                     
                     
-                    <a class="book-page-btn book-page-next" href="../../projects/skin-care-shop/troubleshooting.html">
+                    <a class="book-page-btn book-page-next" href="../contributing.html">
                         <span>
                             <span class="book-page-label">Next</span>
-                            <span class="book-page-title">Troubleshooting</span>
+                            <span class="book-page-title">Contribution Guide</span>
                         </span>
                         <span class="book-page-corner">&#10095;</span>
                     </a>

@@ -1,0 +1,285 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Arif Gadgets home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Arif Gadgets" [ref=e7]:
+          - generic [ref=e27]: ARIFGADGETSPREMIUM TECH MARKETPLACE
+      - search [ref=e28]:
+        - textbox "Search products" [ref=e29]:
+          - /placeholder: Search phones, audio, chargers, SKUs…
+        - button "Search" [ref=e30] [cursor=pointer]
+      - generic [ref=e31]:
+        - button "Switch to dark theme" [ref=e32] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e33]: 🌙
+        - link "Wishlist" [ref=e34] [cursor=pointer]:
+          - /url: /account
+          - generic [aria-hidden] [ref=e35]: ♡
+        - link "Cart" [ref=e37] [cursor=pointer]:
+          - /url: /cart
+          - generic [aria-hidden] [ref=e38]: 🛒
+        - link "Account" [ref=e40] [cursor=pointer]:
+          - /url: /account
+          - generic [aria-hidden] [ref=e41]: 👤
+  - navigation "Product categories" [ref=e43]:
+    - generic [ref=e44]:
+      - link "All products" [ref=e45] [cursor=pointer]:
+        - /url: /catalog
+      - link "Smartphones" [ref=e46] [cursor=pointer]:
+        - /url: /catalog?category=smartphones
+        - text: 📱 Smartphones
+      - link "Audio" [ref=e47] [cursor=pointer]:
+        - /url: /catalog?category=audio
+        - text: 🎧 Audio
+      - link "Wearables" [ref=e48] [cursor=pointer]:
+        - /url: /catalog?category=wearables
+        - text: ⌚ Wearables
+      - link "Power & Charging" [ref=e49] [cursor=pointer]:
+        - /url: /catalog?category=power
+        - text: ⚡ Power & Charging
+      - link "Computing" [ref=e50] [cursor=pointer]:
+        - /url: /catalog?category=computing
+        - text: 💻 Computing
+      - link "Smart Home" [ref=e51] [cursor=pointer]:
+        - /url: /catalog?category=smart-home
+        - text: 🏠 Smart Home
+      - link "Cameras" [ref=e52] [cursor=pointer]:
+        - /url: /catalog?category=cameras
+        - text: 📷 Cameras
+      - link "Accessories" [ref=e53] [cursor=pointer]:
+        - /url: /catalog?category=accessories
+        - text: 🔌 Accessories
+      - link "Button Phone" [ref=e54] [cursor=pointer]:
+        - /url: /catalog?category=button-phone
+        - text: 📦 Button Phone
+      - link "Mobile Accessories" [ref=e55] [cursor=pointer]:
+        - /url: /catalog?category=mobile-accessories
+        - text: 📦 Mobile Accessories
+      - link "Neckband" [ref=e56] [cursor=pointer]:
+        - /url: /catalog?category=neckband
+        - text: 📦 Neckband
+      - link "Phone" [ref=e57] [cursor=pointer]:
+        - /url: /catalog?category=phone
+        - text: 📦 Phone
+      - link "Smart Watch" [ref=e58] [cursor=pointer]:
+        - /url: /catalog?category=smart-watch
+        - text: 📦 Smart Watch
+  - main [ref=e59]:
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - img "Welcome to Arif Gadget Store — genuine gadgets delivered across Bangladesh" [ref=e63]
+        - generic [ref=e64]:
+          - link "Shop now — 17 products" [ref=e65] [cursor=pointer]:
+            - /url: /catalog
+          - link "Track your order" [ref=e66] [cursor=pointer]:
+            - /url: /track
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [aria-hidden] [ref=e69]: ✅
+          - generic [ref=e70]
+        - generic [ref=e72]:
+          - generic [aria-hidden] [ref=e73]: 💵
+          - generic [ref=e74]
+        - generic [ref=e76]:
+          - generic [aria-hidden] [ref=e77]: 🛡️
+          - generic [ref=e78]
+        - generic [ref=e80]:
+          - generic [aria-hidden] [ref=e81]: ⚡
+          - generic [ref=e82]
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]
+          - link "See all" [ref=e90] [cursor=pointer]:
+            - /url: /catalog?sort=discount
+        - generic [ref=e91]:
+          - article [ref=e92]
+          - article [ref=e110]
+          - article [ref=e128]
+          - article [ref=e146]
+          - article [ref=e164]
+          - article [ref=e183]
+          - article [ref=e201]
+          - article [ref=e219]
+          - article [ref=e237]
+          - article [ref=e255]
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - generic [ref=e275]
+          - link "See all" [ref=e279] [cursor=pointer]:
+            - /url: /catalog?sort=popular
+        - generic [ref=e280]:
+          - article [ref=e281]
+          - article [ref=e299]
+          - article [ref=e317]
+          - article [ref=e335]
+          - article [ref=e353]
+          - article [ref=e371]
+          - article [ref=e389]
+          - article [ref=e407]
+      - generic [ref=e425]:
+        - generic [ref=e426]:
+          - heading "Just landed" [level=2] [ref=e429]
+          - link "See all" [ref=e430] [cursor=pointer]:
+            - /url: /catalog?sort=newest
+        - generic [ref=e431]:
+          - article [ref=e432]
+          - article [ref=e450]
+          - article [ref=e466]
+          - article [ref=e482]
+          - article [ref=e500]
+          - article [ref=e518]
+          - article [ref=e537]
+          - article [ref=e555]
+          - article [ref=e573]
+          - article [ref=e591]
+  - contentinfo [ref=e609]:
+    - generic [ref=e610]:
+      - generic [ref=e611]:
+        - generic [ref=e612]:
+          - heading "Need help?" [level=4] [ref=e613]
+          - paragraph [ref=e614]: Ask about a product, an order or delivery — we reply fast.
+        - generic [ref=e615]:
+          - link "💬 Chat on WhatsApp" [ref=e616] [cursor=pointer]:
+            - /url: https://wa.me/8801400290828
+          - link "✉️ arifgadgetstore@gmail.com" [ref=e617] [cursor=pointer]:
+            - /url: mailto:arifgadgetstore@gmail.com
+      - generic [ref=e618]:
+        - generic [ref=e619]:
+          - img "Arif Gadgets" [ref=e621]
+          - paragraph [ref=e642]: Genuine phones, audio, wearables and accessories, delivered across Bangladesh. Live stock, cash on delivery, and a seven-day return window. Buying in quantity? The price drops automatically.
+          - paragraph [ref=e643]: "Owner: Ariful Islam"
+          - link "Arif Gadgets on Facebook" [ref=e645] [cursor=pointer]:
+            - /url: https://www.facebook.com/arifgadgetstore
+        - generic [ref=e648]:
+          - heading "About Us" [level=4] [ref=e649]
+          - list [ref=e650]
+        - generic [ref=e669]:
+          - heading "Policy" [level=4] [ref=e670]
+          - list [ref=e671]
+        - generic [ref=e686]:
+          - heading "Visit or call us" [level=4] [ref=e687]
+          - generic [ref=e688]
+        - generic [ref=e704]:
+          - heading "Business" [level=4] [ref=e705]
+          - list [ref=e706]
+      - generic [ref=e710]:
+        - heading "We accept" [level=4] [ref=e711]
+        - list "Accepted payment methods" [ref=e712]:
+          - listitem [ref=e713]
+          - listitem [ref=e718]
+          - listitem [ref=e723]
+          - listitem [ref=e727]
+      - generic [ref=e732]:
+        - generic [ref=e733]: © 2026 Arif Gadgets Store. All rights reserved.
+        - generic [ref=e734]:
+          - generic [ref=e735]
+          - generic [aria-hidden] [ref=e737]: ·
+          - generic [ref=e738]
+  - button "Open chat" [ref=e740] [cursor=pointer]:
+    - generic [aria-hidden] [ref=e741]: 💬
+    - generic [ref=e742]: Chat with us
+  - generic [aria-hidden]:
+    - navigation:
+      - generic:
+        - generic: Main Menu
+        - generic:
+          - button: 🌙
+          - button: ✕
+      - generic:
+        - link:
+          - /url: /catalog?category=smartphones
+          - generic [aria-hidden]: 📱
+          - generic: Smartphones
+          - generic: "4"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=audio
+          - generic [aria-hidden]: 🎧
+          - generic: Audio
+          - generic: "3"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=wearables
+          - generic [aria-hidden]: ⌚
+          - generic: Wearables
+          - generic: "3"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=power
+          - generic [aria-hidden]: ⚡
+          - generic: Power & Charging
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=computing
+          - generic [aria-hidden]: 💻
+          - generic: Computing
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=smart-home
+          - generic [aria-hidden]: 🏠
+          - generic: Smart Home
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=cameras
+          - generic [aria-hidden]: 📷
+          - generic: Cameras
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=accessories
+          - generic [aria-hidden]: 🔌
+          - generic: Accessories
+          - generic: "3"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=button-phone
+          - generic [aria-hidden]: 📦
+          - generic: Button Phone
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=mobile-accessories
+          - generic [aria-hidden]: 📦
+          - generic: Mobile Accessories
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=neckband
+          - generic [aria-hidden]: 📦
+          - generic: Neckband
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=phone
+          - generic [aria-hidden]: 📦
+          - generic: Phone
+          - generic: "0"
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?category=smart-watch
+          - generic [aria-hidden]: 📦
+          - generic: Smart Watch
+          - generic: "4"
+          - generic [aria-hidden]: ›
+      - generic:
+        - link:
+          - /url: /catalog?sort=discount
+          - generic [aria-hidden]: 🎁
+          - generic: Offers
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /catalog?sort=popular
+          - generic [aria-hidden]: 🔥
+          - generic: Best sellers
+          - generic [aria-hidden]: ›
+        - link:
+          - /url: /track
+          - generic [aria-hidden]: 🚚
+          - generic: Track order
+          - generic [aria-hidden]: ›
+  - status

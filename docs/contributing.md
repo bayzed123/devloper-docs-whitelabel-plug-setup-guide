@@ -1,35 +1,22 @@
 # Contributing to the Docs
 
-## Edit content
+Each project guide should be updated from the project's source repository, not from memory. Record the repository URL and audited commit, then verify the package manifest, lockfile, environment template, migrations, scripts, CI workflows, deployment configuration, and any live URL.
 
-Documentation pages live under `docs/`. Navigation and site metadata live in `smartgen.yml`.
+## Update workflow
 
-1. Create a focused branch.
-2. Update the relevant Markdown page.
-3. Keep commands copyable and tested.
-4. Link related pages with relative Markdown links.
-5. Run a local build before committing.
-6. Open a pull request with the source repository commit or issue used to verify the change.
+1. Clone the target repository at the intended branch.
+2. Read the README and deployment documentation.
+3. Inspect the source tree, package scripts, environment declarations, migrations, and workflows.
+4. Run only safe local checks unless production authorization is explicit.
+5. Capture a Playwright screenshot only for a reachable, public live URL; record the capture date and what it proves.
+6. Update the matching page under `docs/projects/` and the project table on `docs/index.md`.
+7. Run `smartgen-docs build` and check generated links and assets.
+8. Commit the docs update with the audited commit references.
 
-## Content standards
+## Evidence labels
 
-- Prefer verified commands over generic examples.
-- Label examples and placeholders clearly.
-- Never include credentials or private customer data.
-- Document prerequisites before commands.
-- Explain expected results and recovery steps.
-- Keep the navigation order aligned with the reader's setup journey.
+Use **source-verified** for behavior found in source or repository documentation. Use **runtime-verified** only after running the application. Use **live-verified** only after checking a public URL. Use **unknown** when access, credentials, DNS, provider state, or tests were unavailable.
 
-## Replacing the access blocker
+## Safety rules
 
-When `Skin-care-shop` becomes accessible, update these pages in one pass:
-
-- `getting-started/before-you-begin.md`
-- `getting-started/local-setup.md`
-- `getting-started/environment.md`
-- `projects/skin-care-shop/setup.md`
-- `projects/skin-care-shop/workflow.md`
-- `projects/skin-care-shop/deployment.md`
-- `projects/skin-care-shop/troubleshooting.md`
-
-Then verify every command against a clean clone and record the tested commit SHA.
+Never commit real environment files, tokens, customer data, or payment credentials. Treat sample products, prices, addresses, phone numbers, domains, and certification claims as placeholders until the owner verifies them. Do not claim a successful deployment based only on a workflow file.

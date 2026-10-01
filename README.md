@@ -1,32 +1,40 @@
 # Developer Docs
 
-Setup and deployment documentation for Bayzed123 web projects, built with [SmartGen Docs](https://pypi.org/project/smartgen-docs/).
+Reusable setup, feature, pipeline, and deployment guides for rebuilding Bayzed123 projects or handing them to another client/developer. Built with [SmartGen Docs](https://pypi.org/project/smartgen-docs/) in the reading-first style of [docs.smartgentools.com](https://docs.smartgentools.com).
 
-## Local development
+## Projects covered
+
+- [Harbal Pakriti](docs/projects/harbal-pakriti.md)
+- [Jewellery and Fashion](docs/projects/jewellery-and-fashion.md)
+- [Babyshop](docs/projects/babyshop.md)
+- [Arif Gadget Store](docs/projects/arifgadget-store.md)
+- [LKS Attire](docs/projects/lks-attire.md)
+
+## Rebuild order
+
+For any project, use this order: confirm the audited repository commit, install the documented runtime, install from the lockfile, copy the environment template, build assets, migrate and seed local data, create a local admin, start the app, run type checks and tests, configure production secrets and bindings, deploy through CI, run health checks, replace placeholders, and record the release commit.
+
+## Local docs development
 
 ```bash
 python -m pip install smartgen-docs
 smartgen-docs serve
 ```
 
-Open `http://localhost:8000` while editing Markdown under `docs/`.
-
-## Build
+Open `http://localhost:8000` while editing `docs/`. Build the static site with:
 
 ```bash
 smartgen-docs build
 ```
 
-The generated static site is written to `site/`. It can be served locally with:
+The generated site is written to `site/` and can be previewed with `python -m http.server 8000 --directory site`.
 
-```bash
-python -m http.server 8000 --directory site
-```
+## Evidence policy
+
+Source features and commands are based on repository audits. Live behavior is only claimed when tested. During this update, `https://arifgadget.store/` returned HTTP 200 and a Playwright screenshot was captured. The other repositories had no confirmed homepage in GitHub metadata. Never copy a payment, secret, domain, or deployment value from one project into another.
 
 ## Publish
 
-The repository is configured for a GitHub Pages deployment workflow. Push to `main`, then check the **Actions** tab and the repository's **Pages** settings. The Pages source should use the workflow artifact.
+Push `main` to run `.github/workflows/deploy-docs.yml`. In GitHub repository settings, enable Pages with **GitHub Actions** as the source. The expected site URL is:
 
-## Current project note
-
-The requested `bayzed123/Skin-care-shop` repository is not currently visible to the authenticated GitHub account, so the project guide clearly marks unverified commands instead of inventing them. Once the correct URL or access is available, replace the placeholders with commands tested against a clean clone.
+https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/

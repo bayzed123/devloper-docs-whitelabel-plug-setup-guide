@@ -23,16 +23,16 @@
     } catch (e) { /* localStorage unavailable (e.g. privacy mode) -- fall back to default */ }
 })();
 </script>
-    <meta name="description" content="Setup and deployment documentation for Bayzed123 web projects.">
+    <meta name="description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
     
-    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/troubleshooting.html">
-    <meta property="og:title" content="Troubleshooting - Developer Docs">
-    <meta property="og:description" content="Setup and deployment documentation for Bayzed123 web projects.">
-    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/troubleshooting.html">
+    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop.html">
+    <meta property="og:title" content="Babyshop - Developer Docs">
+    <meta property="og:description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
+    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/babyshop.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <title>Troubleshooting - Developer Docs</title>
-    <link rel="stylesheet" href="../../static/book/css/book.css">
+    <title>Babyshop - Developer Docs</title>
+    <link rel="stylesheet" href="../static/book/css/book.css">
     <noscript><style>.book-content > * { opacity: 1 !important; transform: none !important; }</style></noscript>
     
     <style>
@@ -78,13 +78,13 @@
             <button class="book-menu-toggle" id="menu-toggle" type="button" aria-label="Toggle contents">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
             </button>
-            <a class="book-brand" href="../../index.html">
+            <a class="book-brand" href="../index.html">
                 <span class="book-brand-mark" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/><path d="M12 6v13"/></svg>
                 </span>
                 <span class="book-brand-name">Developer Docs</span>
             </a>
-            <span class="book-running-title">Troubleshooting</span>
+            <span class="book-running-title">Babyshop</span>
 
             <div class="book-search">
                 <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
@@ -177,7 +177,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
+                                    <a href="../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
                                 </li>
                             
                         
@@ -199,8 +199,8 @@
                                 
                             
                             <li class="book-chapter" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="getting-started">
-                                    <span class="book-chapter-label">Getting Started</span>
+                                <button class="book-chapter-toggle" type="button" data-section="rebuild-workflow">
+                                    <span class="book-chapter-label">Rebuild Workflow</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -210,7 +210,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
+                                                    <a href="../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
                                                 </li>
                                             
                                         
@@ -220,7 +220,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
+                                                    <a href="../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
                                                 </li>
                                             
                                         
@@ -230,7 +230,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
+                                                    <a href="../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
                                                 </li>
                                             
                                         
@@ -253,17 +253,21 @@
                             
                                 
                                     
-                                
-                            
-                                
-                                    
                                         
                                     
                                 
                             
+                                
+                                    
+                                
+                            
+                                
+                                    
+                                
+                            
                             <li class="book-chapter expanded" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="skin-care-shop">
-                                    <span class="book-chapter-label">Skin-care-shop</span>
+                                <button class="book-chapter-toggle" type="button" data-section="projects">
+                                    <span class="book-chapter-label">Projects</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -273,7 +277,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/setup.html" data-nav-link data-book-page="projects/skin-care-shop/setup.html" class="book-nav-link">Project Setup</a>
+                                                    <a href="../projects/harbal-pakriti.html" data-nav-link data-book-page="projects/harbal-pakriti.html" class="book-nav-link">Harbal Pakriti</a>
                                                 </li>
                                             
                                         
@@ -283,7 +287,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/workflow.html" data-nav-link data-book-page="projects/skin-care-shop/workflow.html" class="book-nav-link">Scripts and Workflow</a>
+                                                    <a href="../projects/jewellery-and-fashion.html" data-nav-link data-book-page="projects/jewellery-and-fashion.html" class="book-nav-link">Jewellery and Fashion</a>
                                                 </li>
                                             
                                         
@@ -293,7 +297,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/deployment.html" data-nav-link data-book-page="projects/skin-care-shop/deployment.html" class="book-nav-link">Production Deployment</a>
+                                                    <a href="../projects/babyshop.html" data-nav-link data-book-page="projects/babyshop.html" class="book-nav-link active">Babyshop</a>
                                                 </li>
                                             
                                         
@@ -303,7 +307,17 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/troubleshooting.html" data-nav-link data-book-page="projects/skin-care-shop/troubleshooting.html" class="book-nav-link active">Troubleshooting</a>
+                                                    <a href="../projects/arifgadget-store.html" data-nav-link data-book-page="projects/arifgadget-store.html" class="book-nav-link">Arif Gadget Store</a>
+                                                </li>
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                <li class="book-nav-item book-nav-item-sub">
+                                                    <a href="../projects/lks-attire.html" data-nav-link data-book-page="projects/lks-attire.html" class="book-nav-link">LKS Attire</a>
                                                 </li>
                                             
                                         
@@ -319,7 +333,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
+                                    <a href="../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
                                 </li>
                             
                         
@@ -333,68 +347,79 @@
         <main class="book-main">
             <div class="book-page">
                 
-                <p class="book-chapter-eyebrow">Page 8 of 9</p>
+                <p class="book-chapter-eyebrow">Page 7 of 10</p>
                 
-                <h1 class="book-title">Troubleshooting</h1>
+                <h1 class="book-title">Babyshop</h1>
                 <div class="book-rule" aria-hidden="true">&#10022;</div>
 
-                <article class="book-content" data-current-path="projects/skin-care-shop/troubleshooting.html" data-progress="89">
+                <article class="book-content" data-current-path="projects/babyshop.html" data-progress="70">
                     
-<h2 id="github-says-the-repository-does-not-exist">GitHub says the repository does not exist</h2>
+<h1 id="babyshop">Babyshop</h1>
 
-<p>Confirm spelling and capitalization, check the owner, and verify the signed-in account:</p>
+<p>Repository: <a href="https://github.com/bayzed123/babyshop">bayzed123/babyshop</a><br />
+Audited commit: <code>c83e6a4</code> on <code>main</code></p>
+
+<h2 id="what-this-project-is">What this project is</h2>
+
+<p>A bilingual Bangladesh baby-and-kids e-commerce storefront branded Zamil Shop BD. Static storefront and admin routes plus a TypeScript/Hono API run on one Cloudflare Worker with D1, KV, and optional R2.</p>
+
+<h2 id="documented-features">Documented features</h2>
+
+<p>The source covers catalogue, categories, search and filters, product details, cart, guest checkout, delivery zones, coupons, referrals, gift wrap, OTP, order tracking, PDF invoices, accounts, addresses, wishlists, registries, returns, reminders, gift finder, inventory and variants, reviews, back-in-stock, admin operations, courier hooks, marketing analytics, WhatsApp/email/SMS, web push, Turnstile, scheduled jobs, backups, and a PWA shell.</p>
+
+<p>COD and manual bKash/Nagad/Rocket flows are available. bKash Tokenized Checkout and SSLCommerz are conditional integrations; Nagad is explicitly a stub and RedX uses staff-entered tracking.</p>
+
+<h2 id="local-rebuild">Local rebuild</h2>
 
 <div class="codehilite">
-<pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>status
-gh<span class="w"> </span>repo<span class="w"> </span>view<span class="w"> </span>bayzed123/Skin-care-shop
+<pre><span></span><code>npm<span class="w"> </span>ci
+cp<span class="w"> </span>worker/.dev.vars.example<span class="w"> </span>worker/.dev.vars
+npm<span class="w"> </span>run<span class="w"> </span>build
+npm<span class="w"> </span>run<span class="w"> </span>db:migrate:local
+npm<span class="w"> </span>run<span class="w"> </span>db:seed:local
+node<span class="w"> </span>scripts/create-admin.mjs<span class="w"> </span><span class="s2">"Owner"</span><span class="w"> </span>owner<span class="w"> </span>super_admin<span class="w"> </span><span class="s1">'A-Long-Password-123'</span><span class="w"> </span>&gt;<span class="w"> </span>.admin.sql
+npx<span class="w"> </span>wrangler<span class="w"> </span>d1<span class="w"> </span>execute<span class="w"> </span>DB<span class="w"> </span>--local<span class="w"> </span>-c<span class="w"> </span>worker/wrangler.toml<span class="w"> </span>--file<span class="o">=</span>.admin.sql
+rm<span class="w"> </span>.admin.sql
+npm<span class="w"> </span>run<span class="w"> </span>dev
 </code></pre>
 </div>
 
-<p>If the repository is private, ask an owner to grant access to the account used for this setup. Do not work around access controls or use a similarly named repository.</p>
+<p>The documented local shop is <code>http://localhost:8787</code>; admin is <code>/admin/</code>. Run <code>npm run typecheck</code>, <code>npm test</code>, and <code>npm run test:e2e</code> before deployment.</p>
 
-<h2 id="dependency-installation-fails">Dependency installation fails</h2>
+<h2 id="scripts-and-pipeline">Scripts and pipeline</h2>
 
-<ul>
-<li>Confirm the Node.js version required by the repository.</li>
-<li>Use only the package manager matching the lockfile.</li>
-<li>Remove <code>node_modules</code> only when a clean reinstall is appropriate.</li>
-<li>Do not delete the lockfile to make installation pass.</li>
-</ul>
+<p>Key scripts include build, typecheck, dev, local/remote migration and seed, admin creation, geo generation, test, E2E, and deploy. CI installs, builds, typechecks, parses scripts, runs Vitest, installs Chromium, and runs Playwright mobile/desktop tests. Main deployment provisions D1/KV/R2, applies migrations, seeds only an empty catalog, creates an admin when credentials are present, deploys, syncs secrets, smoke-tests health, and runs Doctor. Daily Doctor is read-only.</p>
 
-<h2 id="environment-errors">Environment errors</h2>
+<h2 id="production-variables">Production variables</h2>
 
-<p>Check that the local file was copied from the repository's template, variable names match exactly, and the development server was restarted after changes. Never paste secret values into issues or documentation.</p>
+<p>Required deployment secrets are <code>CLOUDFLARE_API_TOKEN</code> and <code>CLOUDFLARE_ACCOUNT_ID</code>. Configure admin bootstrap values, <code>WORKER_NAME</code>, <code>PUBLIC_URL</code>, <code>BOOTSTRAP_TOKEN</code>, runtime vars and bindings, then add optional bKash, SSLCommerz, courier, fraud, SMS, WhatsApp, Resend, VAPID, Meta, GA4, and Turnstile settings.</p>
 
-<h2 id="build-succeeds-locally-but-fails-in-deployment">Build succeeds locally but fails in deployment</h2>
+<h2 id="deployment-checklist">Deployment checklist</h2>
 
-<p>Compare runtime versions, build command, working directory, environment variables, and output directory. Read the hosting provider's build log and reproduce the same command locally.</p>
+<p>Replace sample domain, contact, location, catalog, images, prices, and stock. Verify payment modes in the intended sandbox or production mode, configure Cloudflare routes and DNS, set consent and PII retention rules, confirm backups and restore, and protect manual workflow dispatch with production approvals.</p>
 
-<h2 id="browser-route-returns-404-after-refresh">Browser route returns 404 after refresh</h2>
+<h2 id="known-limits">Known limits</h2>
 
-<p>The host may need a single-page-app fallback or server-side route configuration. Confirm the framework before applying a provider-specific fix.</p>
-
-<h2 id="reporting-a-new-issue">Reporting a new issue</h2>
-
-<p>Include the commit SHA, operating system, runtime and package-manager versions, exact command, relevant non-secret log lines, and a minimal reproduction. Redact tokens, cookies, and customer data.</p>
+<p>No live homepage was present in GitHub metadata. This audit did not run tests or deployment. bKash defaults to sandbox unless configured otherwise; provider onboarding is required. Customer PII is present in application data and backups.</p>
 
 
                 </article>
 
                 <div class="book-page-turn">
                     
-                    <a class="book-page-btn book-page-prev" href="../../projects/skin-care-shop/deployment.html">
+                    <a class="book-page-btn book-page-prev" href="../projects/jewellery-and-fashion.html">
                         <span class="book-page-corner">&#10094;</span>
                         <span>
                             <span class="book-page-label">Previous</span>
-                            <span class="book-page-title">Production Deployment</span>
+                            <span class="book-page-title">Jewellery and Fashion</span>
                         </span>
                     </a>
                     
                     
-                    <a class="book-page-btn book-page-next" href="../../contributing.html">
+                    <a class="book-page-btn book-page-next" href="../projects/arifgadget-store.html">
                         <span>
                             <span class="book-page-label">Next</span>
-                            <span class="book-page-title">Contribution Guide</span>
+                            <span class="book-page-title">Arif Gadget Store</span>
                         </span>
                         <span class="book-page-corner">&#10095;</span>
                     </a>

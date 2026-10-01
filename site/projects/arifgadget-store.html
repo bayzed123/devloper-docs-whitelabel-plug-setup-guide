@@ -23,16 +23,16 @@
     } catch (e) { /* localStorage unavailable (e.g. privacy mode) -- fall back to default */ }
 })();
 </script>
-    <meta name="description" content="Setup and deployment documentation for Bayzed123 web projects.">
+    <meta name="description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
     
-    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/workflow.html">
-    <meta property="og:title" content="Scripts and Workflow - Developer Docs">
-    <meta property="og:description" content="Setup and deployment documentation for Bayzed123 web projects.">
-    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/skin-care-shop/workflow.html">
+    <link rel="canonical" href="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store.html">
+    <meta property="og:title" content="Arif Gadget Store - Developer Docs">
+    <meta property="og:description" content="Reusable setup, feature, pipeline, and deployment guides for Bayzed123 web projects.">
+    <meta property="og:url" content="https://bayzed123.github.io/devloper-docs-whitelabel-plug-setup-guide/projects/arifgadget-store.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <title>Scripts and Workflow - Developer Docs</title>
-    <link rel="stylesheet" href="../../static/book/css/book.css">
+    <title>Arif Gadget Store - Developer Docs</title>
+    <link rel="stylesheet" href="../static/book/css/book.css">
     <noscript><style>.book-content > * { opacity: 1 !important; transform: none !important; }</style></noscript>
     
     <style>
@@ -78,13 +78,13 @@
             <button class="book-menu-toggle" id="menu-toggle" type="button" aria-label="Toggle contents">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
             </button>
-            <a class="book-brand" href="../../index.html">
+            <a class="book-brand" href="../index.html">
                 <span class="book-brand-mark" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M4 5.5c2-1 5-1 8 .5 3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5V5.5Z"/><path d="M12 6v13"/></svg>
                 </span>
                 <span class="book-brand-name">Developer Docs</span>
             </a>
-            <span class="book-running-title">Scripts and Workflow</span>
+            <span class="book-running-title">Arif Gadget Store</span>
 
             <div class="book-search">
                 <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg>
@@ -177,7 +177,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
+                                    <a href="../index.html" data-nav-link data-book-page="index.html" class="book-nav-link">Home</a>
                                 </li>
                             
                         
@@ -199,8 +199,8 @@
                                 
                             
                             <li class="book-chapter" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="getting-started">
-                                    <span class="book-chapter-label">Getting Started</span>
+                                <button class="book-chapter-toggle" type="button" data-section="rebuild-workflow">
+                                    <span class="book-chapter-label">Rebuild Workflow</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -210,7 +210,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
+                                                    <a href="../getting-started/before-you-begin.html" data-nav-link data-book-page="getting-started/before-you-begin.html" class="book-nav-link">Before You Begin</a>
                                                 </li>
                                             
                                         
@@ -220,7 +220,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
+                                                    <a href="../getting-started/local-setup.html" data-nav-link data-book-page="getting-started/local-setup.html" class="book-nav-link">Local Setup</a>
                                                 </li>
                                             
                                         
@@ -230,7 +230,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
+                                                    <a href="../getting-started/environment.html" data-nav-link data-book-page="getting-started/environment.html" class="book-nav-link">Environment Variables</a>
                                                 </li>
                                             
                                         
@@ -249,6 +249,14 @@
                             
                                 
                                     
+                                
+                            
+                                
+                                    
+                                
+                            
+                                
+                                    
                                         
                                     
                                 
@@ -257,13 +265,9 @@
                                     
                                 
                             
-                                
-                                    
-                                
-                            
                             <li class="book-chapter expanded" data-nav-section style="--stagger:0">
-                                <button class="book-chapter-toggle" type="button" data-section="skin-care-shop">
-                                    <span class="book-chapter-label">Skin-care-shop</span>
+                                <button class="book-chapter-toggle" type="button" data-section="projects">
+                                    <span class="book-chapter-label">Projects</span>
                                     <svg class="icon book-chapter-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
                                 </button>
                                 <ul class="book-chapter-pages" data-nav-submenu>
@@ -273,7 +277,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/setup.html" data-nav-link data-book-page="projects/skin-care-shop/setup.html" class="book-nav-link">Project Setup</a>
+                                                    <a href="../projects/harbal-pakriti.html" data-nav-link data-book-page="projects/harbal-pakriti.html" class="book-nav-link">Harbal Pakriti</a>
                                                 </li>
                                             
                                         
@@ -283,7 +287,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/workflow.html" data-nav-link data-book-page="projects/skin-care-shop/workflow.html" class="book-nav-link active">Scripts and Workflow</a>
+                                                    <a href="../projects/jewellery-and-fashion.html" data-nav-link data-book-page="projects/jewellery-and-fashion.html" class="book-nav-link">Jewellery and Fashion</a>
                                                 </li>
                                             
                                         
@@ -293,7 +297,7 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/deployment.html" data-nav-link data-book-page="projects/skin-care-shop/deployment.html" class="book-nav-link">Production Deployment</a>
+                                                    <a href="../projects/babyshop.html" data-nav-link data-book-page="projects/babyshop.html" class="book-nav-link">Babyshop</a>
                                                 </li>
                                             
                                         
@@ -303,7 +307,17 @@
                                                 
                                                 
                                                 <li class="book-nav-item book-nav-item-sub">
-                                                    <a href="../../projects/skin-care-shop/troubleshooting.html" data-nav-link data-book-page="projects/skin-care-shop/troubleshooting.html" class="book-nav-link">Troubleshooting</a>
+                                                    <a href="../projects/arifgadget-store.html" data-nav-link data-book-page="projects/arifgadget-store.html" class="book-nav-link active">Arif Gadget Store</a>
+                                                </li>
+                                            
+                                        
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                <li class="book-nav-item book-nav-item-sub">
+                                                    <a href="../projects/lks-attire.html" data-nav-link data-book-page="projects/lks-attire.html" class="book-nav-link">LKS Attire</a>
                                                 </li>
                                             
                                         
@@ -319,7 +333,7 @@
                                 
                                 
                                 <li class="book-nav-item" style="--stagger:0">
-                                    <a href="../../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
+                                    <a href="../contributing.html" data-nav-link data-book-page="contributing.html" class="book-nav-link">Contribution Guide</a>
                                 </li>
                             
                         
@@ -333,105 +347,87 @@
         <main class="book-main">
             <div class="book-page">
                 
-                <p class="book-chapter-eyebrow">Page 6 of 9</p>
+                <p class="book-chapter-eyebrow">Page 8 of 10</p>
                 
-                <h1 class="book-title">Scripts and Workflow</h1>
+                <h1 class="book-title">Arif Gadget Store</h1>
                 <div class="book-rule" aria-hidden="true">&#10022;</div>
 
-                <article class="book-content" data-current-path="projects/skin-care-shop/workflow.html" data-progress="67">
+                <article class="book-content" data-current-path="projects/arifgadget-store.html" data-progress="80">
                     
-<p>The repository is not currently accessible, so exact script names are intentionally not asserted here. After access is restored, replace the placeholders with the values from <code>package.json</code>.</p>
+<h1 id="arif-gadget-store">Arif Gadget Store</h1>
 
-<h2 id="scripts-to-document">Scripts to document</h2>
+<p>Repository: <a href="https://github.com/bayzed123/arifgadget.store">bayzed123/arifgadget.store</a><br />
+Audited commit: <code>f79cb604880814e5adf15230b43ec407c82d0726</code> on <code>main</code></p>
 
-<table>
-<thead>
-<tr>
-  <th>Purpose</th>
-  <th>Command</th>
-  <th>Verified result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Install</td>
-  <td><code>&lt;lockfile-safe install command&gt;</code></td>
-  <td>Dependencies install without mutation</td>
-</tr>
-<tr>
-  <td>Development</td>
-  <td><code>&lt;package-manager&gt; run dev</code></td>
-  <td>Local server starts</td>
-</tr>
-<tr>
-  <td>Production build</td>
-  <td><code>&lt;package-manager&gt; run build</code></td>
-  <td>Deployable artifact is generated</td>
-</tr>
-<tr>
-  <td>Preview/start</td>
-  <td><code>&lt;package-manager&gt; run preview</code> or <code>&lt;package-manager&gt; start</code></td>
-  <td>Production output is served locally</td>
-</tr>
-<tr>
-  <td>Lint</td>
-  <td><code>&lt;package-manager&gt; run lint</code></td>
-  <td>No blocking lint errors</td>
-</tr>
-<tr>
-  <td>Tests</td>
-  <td><code>&lt;package-manager&gt; test</code></td>
-  <td>Test suite passes</td>
-</tr>
-</tbody>
-</table>
+<h2 id="what-this-project-is">What this project is</h2>
 
-<h2 id="daily-development-loop">Daily development loop</h2>
+<p>A wholesale gadget commerce application with a React 18/Vite/TypeScript storefront deployed as a GitHub Pages SPA and a Hono TypeScript API on Cloudflare Workers. The API uses D1/SQLite, KV, optional R2 media, and optional Workers AI.</p>
+
+<h2 id="live-evidence">Live evidence</h2>
+
+<p><code>https://arifgadget.store/</code> returned HTTP 200 during the audit. The page title was <strong>Wholesale Gadgets, Factory Direct — Arif Gadgets</strong>. A Playwright full-page screenshot is included below. This confirms the storefront homepage was reachable at capture time; it does not confirm API, checkout, admin, payment, or deployment health.</p>
+
+<p><img src="../assets/screenshots/arifgadget-home.png" alt="Arif Gadget Store homepage captured with Playwright" /></p>
+
+<p>The screenshot visibly shows search, category navigation, hero promotion, product grids, discounts, cart/account links, order tracking, chat/WhatsApp contact, delivery promises, and footer policy/contact areas.</p>
+
+<h2 id="documented-features">Documented features</h2>
+
+<p>The source covers product catalogue, search/filter/sort, categories, product details, reviews, volume pricing, MOQ, cart, server-side stock/pricing checks, checkout, delivery/postcode lookup, order tracking, invoices, WhatsApp handoff, customer accounts, order history, wishlist, and admin modules for products, inventory, orders, reviews, staff, settings, and analytics. Optional integrations include Steadfast, Google tools, Workers AI, Groq, Resend, and Meta conversions.</p>
+
+<h2 id="local-rebuild">Local rebuild</h2>
 
 <div class="codehilite">
-<pre><span></span><code><span class="c1"># 1. Update the branch</span>
-git<span class="w"> </span>pull<span class="w"> </span>--ff-only
-
-<span class="c1"># 2. Install using the committed lockfile</span>
-&lt;install<span class="w"> </span>command&gt;
-
-<span class="c1"># 3. Configure local environment</span>
-cp<span class="w"> </span>&lt;environment-template&gt;<span class="w"> </span>&lt;local-environment-file&gt;
-
-<span class="c1"># 4. Start the application</span>
-&lt;development<span class="w"> </span>command&gt;
-
-<span class="c1"># 5. Before opening a pull request</span>
-&lt;lint<span class="w"> </span>command&gt;
-&lt;<span class="nb">test</span><span class="w"> </span>command&gt;
-&lt;build<span class="w"> </span>command&gt;
+<pre><span></span><code>npm<span class="w"> </span>install
+<span class="nb">printf</span><span class="w"> </span><span class="s1">'JWT_SECRET=local-dev-secret\n'</span><span class="w"> </span>&gt;<span class="w"> </span>worker/.dev.vars
+npm<span class="w"> </span>run<span class="w"> </span>migrate:local<span class="w"> </span>--workspace<span class="w"> </span>worker
+npm<span class="w"> </span>run<span class="w"> </span>dev:api
 </code></pre>
 </div>
 
-<p>Replace every angle-bracket placeholder after inspecting the actual project. Keeping placeholders visible is safer than publishing commands that could silently install or deploy the wrong application.</p>
+<p>In another terminal:</p>
 
-<h2 id="branch-and-commit-guidance">Branch and commit guidance</h2>
+<div class="codehilite">
+<pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>dev:web
+</code></pre>
+</div>
 
-<p>Use focused branches such as <code>docs/skin-care-setup</code> or <code>feature/product-search</code>. Keep dependency-lockfile changes with the dependency change that caused them, and describe any required environment or migration step in the pull request.</p>
+<p>The documented API address is <code>127.0.0.1:8787</code> and Vite is <code>127.0.0.1:5173</code>. For production, configure <code>API_DOMAIN</code>, <code>WORKERS_SUBDOMAIN</code>, or <code>API_BASE_URL</code> before building the Pages SPA.</p>
+
+<h2 id="scripts-and-pipeline">Scripts and pipeline</h2>
+
+<p>Use <code>dev:api</code>, <code>dev:web</code>, <code>build</code>, <code>typecheck</code>, workspace migration, <code>bootstrap</code>, <code>deploy:api</code>, <code>generate-sitemap</code>, and <code>cf-doctor</code>. CI runs Node 20, npm install, typecheck, web build, local D1 migrations, Worker startup, and API smoke test. Deployment has separate API and Pages jobs: it provisions resources, migrates D1, deploys the Worker, sets secrets, provisions the owner, builds the SPA, writes <code>404.html</code>, <code>.nojekyll</code>, <code>CNAME</code>, generates a sitemap from the live API, and publishes Pages.</p>
+
+<h2 id="production-variables">Production variables</h2>
+
+<p>Configure <code>CLOUD_FLARE_API</code> and <code>CLOUD_FLARE_ACCOUNT_ID</code> or the helper's accepted Cloudflare aliases, <code>ADMIN_USERNAME</code>, <code>ADMIN_PASSWORD</code>, optional <code>ADMIN_NAME</code>/<code>ADMIN_EMAIL</code>, <code>API_DOMAIN</code>/<code>WORKERS_SUBDOMAIN</code>/<code>API_BASE_URL</code>, and integration secrets such as Steadfast, Google service account, Groq, Resend, Meta, and report-trigger credentials. No environment example file was found in the audit; add and maintain one.</p>
+
+<h2 id="deployment-checklist">Deployment checklist</h2>
+
+<p>Rotate any credentials ever shared in project documentation, set a strong JWT secret, close the first-run owner setup after creating an account, configure <code>ALLOWED_ORIGINS</code>, verify the API DNS record (it was unresolved during the audit), test D1 backups and restore, and confirm Pages-to-Worker API connectivity before accepting orders.</p>
+
+<h2 id="known-limits">Known limits</h2>
+
+<p>The storefront was reachable, but <code>api.arifgadget.store</code> did not resolve during the audit. No full install, typecheck, build, remote migration, deployment, or end-to-end test was run. API health and checkout remain unverified.</p>
 
 
                 </article>
 
                 <div class="book-page-turn">
                     
-                    <a class="book-page-btn book-page-prev" href="../../projects/skin-care-shop/setup.html">
+                    <a class="book-page-btn book-page-prev" href="../projects/babyshop.html">
                         <span class="book-page-corner">&#10094;</span>
                         <span>
                             <span class="book-page-label">Previous</span>
-                            <span class="book-page-title">Project Setup</span>
+                            <span class="book-page-title">Babyshop</span>
                         </span>
                     </a>
                     
                     
-                    <a class="book-page-btn book-page-next" href="../../projects/skin-care-shop/deployment.html">
+                    <a class="book-page-btn book-page-next" href="../projects/lks-attire.html">
                         <span>
                             <span class="book-page-label">Next</span>
-                            <span class="book-page-title">Production Deployment</span>
+                            <span class="book-page-title">LKS Attire</span>
                         </span>
                         <span class="book-page-corner">&#10095;</span>
                     </a>
