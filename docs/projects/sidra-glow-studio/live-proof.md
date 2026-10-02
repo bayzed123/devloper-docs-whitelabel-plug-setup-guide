@@ -30,3 +30,5 @@ No source repository was supplied for this live Worker, so this folder records l
 
 - [Harbal Pakriti](../harbal-pakriti/index.md)
 - [Jewellery and Fashion](../jewellery-and-fashion/index.md)
+
+- [Demu Highlighted Showcase](../../showcase/index.md)

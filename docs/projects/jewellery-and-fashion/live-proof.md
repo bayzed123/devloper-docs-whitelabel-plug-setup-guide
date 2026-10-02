@@ -33,3 +33,5 @@ This live Worker is the supplied deployment proof for the Jewellery and Fashion 
 - [Whitelabel Rebranding](whitelabel.md)
 - [Harbal Pakriti](../harbal-pakriti/index.md)
 - [Babyshop](../babyshop/index.md)
+
+- [Demu Highlighted Showcase](../../showcase/index.md)

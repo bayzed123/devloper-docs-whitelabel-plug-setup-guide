@@ -33,3 +33,5 @@ This live Worker is the supplied deployment proof for the LKS Attire repository 
 - [Deployment](deployment.md)
 - [Whitelabel Rebranding](whitelabel.md)
 - [Jewellery and Fashion](../jewellery-and-fashion/index.md)
+
+- [Demu Highlighted Showcase](../../showcase/index.md)

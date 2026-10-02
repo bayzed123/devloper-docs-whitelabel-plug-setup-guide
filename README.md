@@ -27,6 +27,10 @@ Projects covered:
 - `arifgadget-store`
 - `lks-attire`
 
+## Highlighted Demu showcase
+
+The [Demu live demo showcase](docs/showcase/index.md) links the related public storefronts and demo-admin dashboards at [demu.sayadbayezid.com](https://demu.sayadbayezid.com/). It contains Playwright-captured storefront/admin screenshots, raw demo URLs, feature summaries, and repository mappings for LKS Attire, Harbal Pakriti/Prakriti Herbal, Jewellery and Fashion/Sidra Jewellery, Babyshop/Zamil Shop BD, and the live-only Sidra Glow Studio demo. These demos use fictional data and are presentation evidence, not production access.
+
 ## Rebuild order
 
 For any client, read the folder's `index.md`, then follow Setup, Environment, Features, Pipeline, Deployment, Whitelabel Rebranding, Troubleshooting, and Live Proof. Install from the lockfile, use a fresh local database, configure isolated client secrets, replace all placeholders, run tests and health checks, and record the deployed commit.

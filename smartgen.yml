@@ -25,6 +25,7 @@ style_switcher:
 
 nav:
   - Home: index.md
+  - Demu Highlighted Showcase: showcase/index.md
   - Rebuild Workflow:
       - Before You Begin: getting-started/before-you-begin.md
       - Local Setup: getting-started/local-setup.md

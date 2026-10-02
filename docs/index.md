@@ -4,6 +4,10 @@ This is the reusable setup, feature, pipeline, deployment, and whitelabel rebran
 
 > **Folder rule:** every project has its own directory. Do not create a single all-in-one project Markdown file. Use the separate Overview, Setup, Features, Environment, Pipeline, Deployment, Whitelabel Rebranding, and Troubleshooting pages for each client rebuild.
 
+## Highlighted live showcase
+
+Review the related [Demu client demo showcase](showcase/index.md) for verified storefront/admin screenshots, raw demo links, feature highlights, and the mapping between the public demos and these source repositories. The showcase uses fictional demo data and is separate from production deployment proof.
+
 ## Project guides
 
 | Project | Guide folder | Architecture | Evidence |

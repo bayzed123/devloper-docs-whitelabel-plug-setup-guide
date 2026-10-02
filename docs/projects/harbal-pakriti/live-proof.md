@@ -33,3 +33,5 @@ This live Worker is the supplied deployment proof for the Harbal Pakriti reposit
 - [Whitelabel Rebranding](whitelabel.md)
 - [Babyshop](../babyshop/index.md)
 - [LKS Attire](../lks-attire/index.md)
+
+- [Demu Highlighted Showcase](../../showcase/index.md)

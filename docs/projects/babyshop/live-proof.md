@@ -33,3 +33,5 @@ This live Worker is the supplied deployment proof for the Babyshop repository gu
 - [Deployment](deployment.md)
 - [Whitelabel Rebranding](whitelabel.md)
 - [Harbal Pakriti](../harbal-pakriti/index.md)
+
+- [Demu Highlighted Showcase](../../showcase/index.md)
